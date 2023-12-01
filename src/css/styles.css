@@ -361,6 +361,9 @@ video{
  .work-experience table{
     margin-bottom: 10px;
  }
+ #resume-footer{
+  padding: 10px;
+ }
  /* service*/
 .service-header{
     text-align: center;
@@ -379,6 +382,10 @@ video{
     padding: 5px;
     text-align: center;
     
+}
+#Service-footer{
+  background-color: #170d35;
+  padding: 10px;
 }
  /* contact */ 
  .contact-me{
