@@ -1,12 +1,9 @@
-/* Default Styles */
-
 body {
     background-color: #1c1c46;
     color: #fdfdfd;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    /* font-size: 26px; */
 }  
 li {
     padding: 10px;
@@ -16,13 +13,9 @@ li {
     text-decoration: none;
     color: #754ef9;
   }
-  
-  /* Hamburger Menu Styles */
-  
   #menu-toggle {
     display: none;
   }
-  
   #menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -31,7 +24,6 @@ li {
     user-select: none;
     text-align: center;
   }
-  
   #menu {
     position: fixed;
     top: 0;
@@ -43,30 +35,26 @@ li {
     overflow: hidden;
     transition: height 0.3s ease;
   }
-  
   #menu-toggle:checked ~ #menu {
-    height: 200px; /* Adjust this value to match the height of your menu */
+    height: 200px; 
   }
-  
   #menu ul {
     padding: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-  
   #menu li {
     border-bottom: 1px solid #ccc;
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
+  } 
   #menu-toggle:checked ~ #menu li {
     opacity: 1;
     transform: translateY(0);
   }
-/* home page*********************************** */
+/* home page */
   header{
    text-align: right;
    color:#fdfdfd;
@@ -74,7 +62,6 @@ li {
    border:1px solid #5c33e2;
    box-sizing: content-box;
    font-size: 20px;
-   
   }
   .home-continer{
 
@@ -87,18 +74,14 @@ li {
     margin-top: 50px;
     width:15rem;
     height: 20rem;
-    
   }
-
   .home-content h1{
     text-align: center;
   }
   .home-content p{
     width: 25rem;
-    margin:2px  auto;
-    
+    margin:2px  auto;  
   }
-
   .home-content a,.certifcate a,.work-experience a{
     background-color: #754ef9;
     padding: 5px;
@@ -109,13 +92,11 @@ li {
     width:150px;
     margin:5px;
   }
-
   .about-container{
     display: grid;
     gap: 30px;
   }
-
-  .about-container div{
+ .about-container div{
     order:-1;
     margin:30px auto;
     
@@ -139,9 +120,7 @@ li {
   
   }
   .lower-container{
-    display:grid;
-    
-    
+    display:grid;  
   }
   .lower-container .div1  ul,.about-container aside ul{
     list-style-type: none;
@@ -150,7 +129,6 @@ li {
     text-decoration: underline;
     text-decoration-color:#754ef9 ;
   }
-
   .form div{
     margin: 0.5rem;
  }
@@ -158,7 +136,6 @@ li {
     width: 12rem;
     height: 200px;
  }
-
  .button{
     width:78px;
     height: 25px;
@@ -182,7 +159,6 @@ li {
     text-decoration: underline;
     
  }
- /* *** skil********************************** */
 .skill-container{
   display: grid;
   justify-content: space-between;
@@ -243,31 +219,23 @@ circle{
 #html{
   position: absolute;
   top:0;
-  left: 0;
-  
+  left: 0; 
 }
 #css{
   position: absolute;
   top:0;
-  left: 0;
- 
+  left: 0; 
 }
-
 #jquery{
   position: absolute;
   top:0;
-  left: 0;
-  
+  left: 0;  
 }
-
 #javascript{
   position: absolute;
   top:0;
   left: 0;
-
 }
-
-
 @keyframes anim1{
    
     100%{
@@ -292,8 +260,7 @@ circle{
         stroke-dashoffset: 212;
     }
 }
-
- /* About page*************************************************************** */
+ /* About page */
 .about-section{
     text-align: center;
 }
@@ -302,7 +269,6 @@ circle{
 }
 .about-article{
     display: grid;
-
 }
 .about-article div{
     margin: 10px auto;
@@ -312,26 +278,18 @@ circle{
 }
 .interest-Section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    
-   
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  
 }
 .interest-Section div{
     text-align: left;
     border:3px solid  #754ef9;
     margin:10px auto;
     width: 22rem;
-    padding: 5px;
-    
-    
+    padding: 5px;   
 }
-/* .project-section {
-    
-} */
 .project-section h1{
     font-size: 35px;
     text-align: center;
-
 }
 .project-section h4{
     font-style: italic;
@@ -358,8 +316,7 @@ video{
     text-align: center;
     border:3px solid  #754ef9;
 }
-
- /* Resume page ******************************************************* */
+ /* Resume page*/
  .resume{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -378,8 +335,7 @@ video{
     padding: 5px;
     text-align: left;
     box-sizing: border-box;
-    box-shadow: 2px;
-    
+    box-shadow: 2px;  
  }
  .work-experience table,td{
     border:1px solid whitesmoke;
@@ -389,10 +345,9 @@ video{
  .work-experience table{
   margin-bottom: 10px;
 }
- /* service********************************************* */
+ /* service */
 .service-header{
     text-align: center;
-
 }
 .services{
     display: grid;
@@ -407,10 +362,7 @@ video{
     padding: 5px;
     text-align: center;   
 }
-
-
-
- /* contact ********************************************************** */ 
+ /* contact  */ 
  .contact-me{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
