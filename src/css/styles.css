@@ -153,109 +153,111 @@ li {
     
  }
  .skill-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 .skill-header{
-    text-align: center;
+  text-align: center;
 }
 #skill{
-    text-align: center;
+  text-align: center;
 }
 .skill{
-    display: flex;
-    position: relative;
-    width: 160px;
-    height: 160px;
+  display: flex;
+  position: relative;
+  width: 160px;
+  height: 160px;
 }
 .outer{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    padding: 18px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 18px;
 }
 .inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 circle{
-    fill:none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray:472;
-    stroke-dashoffset:472;
-    animation: anim 2s linear forwards;
+  fill:none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray:472;
+  stroke-dashoffset:472;
+  animation: anim 2s linear forwards;
 }
 #c1{
-   
-    animation: anim1 2s linear forwards;
+ 
+  animation: anim1 2s linear forwards;
 }
 #c2{
-    
-    animation: anim2 2s linear forwards;
+  
+  animation: anim2 2s linear forwards;
 }
 #c3{
-   
-    animation: anim3 2s linear forwards;
+ 
+  animation: anim3 2s linear forwards;
 }
 #c4{
-    
-    animation: anim4 2s linear forwards;
+  
+  animation: anim4 2s linear forwards;
 }
-
 #html{
-    position: absolute;
-    top:0;
-    left: 0;
-    
+  position: absolute;
+  top:0;
+  left: 0;
+  
 }
 #css{
-    position: absolute;
-    top:0;
-    left: 0;
-   
-}  
+  position: absolute;
+  top:0;
+  left: 0;
+ 
 }
+
+
 #jquery{
-    position: absolute;
-    top:0;
-    left: 0;
-    
+  position: absolute;
+  top:0;
+  left: 0;
+  
 }
+
 #javascript{
-    position: absolute;
-    top:0;
-    left: 0;
+  position: absolute;
+  top:0;
+  left: 0;
 
 }
+
 @keyframes anim1{
-   
-    100%{
-        stroke-dashoffset: 50;
-    }
+ 
+  100%{
+      stroke-dashoffset: 50;
+  }
 }
 @keyframes anim2{
-    
-    100%{
-        stroke-dashoffset: 188;
-    }
+  
+  100%{
+      stroke-dashoffset: 188;
+  }
 }
 @keyframes anim3{
-    
-    100%{
-        stroke-dashoffset: 118;
-    }
+  
+  100%{
+      stroke-dashoffset: 118;
+  }
 }
 @keyframes anim4{
-  
-    100%{
-        stroke-dashoffset: 212;
-    }
+
+  100%{
+      stroke-dashoffset: 212;
+  }
 }
 
  /* About page */
