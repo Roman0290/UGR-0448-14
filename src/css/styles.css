@@ -409,7 +409,7 @@ video{
  /* contact ********************************************************** */ 
  .contact-me{
     display: flex;
-    flex-direction: row;  
+    flex-direction: column;  
  }
  .contact-article {
   margin: 5px;
