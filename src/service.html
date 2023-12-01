@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
+    <link rel="stylesheet" href="css/css-grid.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <nav id="menu">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
+                <li><a href="Service.html">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="service-header">
         <h1>My Services</h1>
         <P>What i do  for my client</P>
     </section>
-    <div>
+    <div class="services">
         <div>
             <img src="image/web-design.png" alt="icon">
             <h2>website design</h2>
@@ -51,7 +54,7 @@
         
     </div>
 
-    <footer>
+    <footer class="footer">
         <P><a href="contact.html">contact me</a></P>
     </footer>
 

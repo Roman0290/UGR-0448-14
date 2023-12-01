@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
+    <link rel="stylesheet" href="css/css-grid.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <nav id="menu">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
+                <li><a href="Service.html">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="about-section">
         <h1>ABOUT ME</h1>
         <p><q>  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
     </section>
-    <div>
-        <img src="image/image2.png" alt="image">
-    </div>
-        
-    <article>
-        <h2>My Bio</h2>
-          <div><audio src="audio-video/who-am-i.ogg" controls></audio></div>
-          <h3>stay contact</h3>
-          <ul>
-            <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-            <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-            <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-            <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
-          </ul>
+    <article class="about-article">
+        <div>
+            <img src="image/image2.png" alt="image">
+        </div>
+        <div>
+            <h2>My Bio</h2>
+            <div class="about-span"><audio src="audio-video/who-am-i.ogg" controls></audio></div>
+            <h3>stay contact</h3>
+            <ul>
+              <li><img src="image/user.png" alt="icon"><span>Roman Kebede Debissa</span> </li>
+              <li><img src="image/telephone.png" alt="icon"> <span>+251902903481</span></li>
+              <li><img src="image/email.png" alt="icon"><span>romankebede@gmail.com</span></li>
+              <li><img src="image/location.png" alt="icon"><span>Adiss Ababa, Ethiopia</span></li>
+            </ul>
+        </div>
+         
         
     </article>
-    <section>
+    <section class="interest-Section">
         <div>
             <h2>interest</h2>
             <ul>
@@ -57,28 +62,30 @@
             </ul>
         </div>
     </section>
-    <section>
-        <h1>project</h1>
+    <section class="project-section">
         
-        <div><video src="audio-video/project2.mp4" width= 500  controls></video></div>
-            
+            <h1>project</h1>
         
-        <h4>video of my projects review</h4>
-        <div>
-            <h2>Website Development</h2>
-            <p>Designed and built functional and visually appealing websites.</p>
+            <div class="video"><video src="audio-video/project2.mp4"   controls></video></div>
+            <h4>video of my projects review</h4>
+        <div class="projects">
+            <div>
+                <h2>Website Development</h2>
+                <p>Designed and built functional and visually appealing websites.</p>
+            </div>
+            <div>
+                <h2> E-commerce Website</h2>
+                <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
+            </div>
+            <div>
+                <h2>Finance Tracking App</h2>
+                <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
+            </div>
         </div>
-        <div>
-            <h2> E-commerce Website</h2>
-            <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
-        </div>
-        <div>
-            <h2>Finance Tracking App</h2>
-            <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
-        </div>
+        
 
     </section>
-    <footer>
+    <footer class="footer">
          <a href="resume.html">next Page</a>
     </footer>
 </body>
