@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <link rel="stylesheet" href="css/css-grid.css">
 </head>
 <body>
-    <section>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="Service">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <img src="image/image1.png" alt="personal-profile-image">
-        </div>
-        <div>
-            <h1>Hello,I am Roman <span>Debissa</span></h1>
-            <p>An accomplished and detail-oriented web developer, specializing in the creation of visually captivating and user-friendly websites. </p>
-        <a href="about.html">More Me</a>
-        </div>
         
+    <header class="header">
+        <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <nav class="continer" id="menu">
+            <ul >
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-continer" id="home">
+        <div class="image">
+            <img class="profile" src="image/image1.png" alt="personal-profile-image">
+        </div>
+        <div class="home-content">
+            <h1>Hello,I am Roman <span> Debissa</span></h1>
+            <p>An accomplished and detail-oriented web developer, specializing in the creation of visually captivating and user-friendly websites. </p>
+            <a href="about.html">More Me</a>
+        </div>
+            
     </section>
     
-    <section>
-        <h1>who am i</h1>
-        <aside>
+    <section class="about-container">
+        
+        <aside>   
+            <h1>who am i</h1>
             <p>I'm Roman, a skilled web developer experienced in front-end and back-end development. I create responsive websites and applications using HTML, CSS, JavaScript, and frameworks. With a strong problem-solving mindset, I deliver high-quality solutions, exceeding client expectations. Collaboration is my strength, bringing ideas to life and crafting exceptional user experiences. I'm dedicated to continuous learning and pushing the boundaries of web development.</p>
             <ul>
-                <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-                <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-                <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-                <li><img src="image/location.png" alt="">Adiss Ababa, Ethiopia</li>
+                <li><img src="image/user.png" alt="icon"><span>Roman Kebede Debissa</span> </li>
+                <li><img src="image/telephone.png" alt="icon"> <span>+251902903481</span></li>
+                <li><img src="image/email.png" alt="icon"><span>romankebede@gmail.com</span></li>
+                <li><img src="image/location.png" alt="icon"><span>Adiss Ababa, Ethiopia</span></li>
             </ul>
             
 
@@ -48,39 +53,99 @@
         </div>
 
     </section>
-    <section>
-            <h1>Skills</h1>
-            <h3>I work hard to improve my skills regularly</h3>
-            <div>
-                <h3>HTML</h3>
-                <p>HTML is markup language for structuring and presenting web content. </p>
+    <section id="skill-container" >
+        <div class="skill-header" id="skill">
+                <h1>Skills</h1>
+                <h3>I work hard to improve my skills regularly</h3>
+            
+        </div>
+        <div class="skill-container">
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">HTML <br>96%</div> 
+                    </div>
+                </div>
+                <svg id="html" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#8A2BE2" />
+                            <stop offset="100%" stop-color="#800080" /> 
+                       </linearGradient>
+                    </defs>
+                    <circle id="c1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                
             </div>
-            <div>
-                <h3>CSS</h3>
-                <p>CSS is a style sheet language for web pages' visual customization.</p>
+            
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">JAVASCRIPT <br>62%</div> 
+                    </div>
+                </div>
+                <svg id="javascript"  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#8A2BE2" />
+                            <stop offset="100%" stop-color="#800080" />
+                       </linearGradient>
+                    </defs>
+                    <circle id="c2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+    
+                
             </div>
-            <div>
-                <h3>JavaScript</h3>
-                <p>JavaScript is a programming language for web interactivity and functionality.</p>
+            
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">CSS <br>79%</div> 
+                    </div>
+                </div>
+                <svg id="css"  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#8A2BE2" />
+                        `   <stop offset="100%" stop-color="#800080" />
+                       </linearGradient>
+                    </defs>
+                    <circle id="c3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
             </div>
-            <div>
-                <h3>React</h3>
-                <p>React is a JavaScript library for building user interfaces and web applications.</p>
+                
+            <div class="skill"> 
+                <div class="outer">
+                    <div class="inner">
+                        <div class="number">JQUERY <br>54%</div> 
+                    </div>
+                </div>
+                <svg id="jquery"  xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                       <linearGradient id="GradientColor">
+                          <stop offset="0%" stop-color="#8A2BE2" />
+                          <stop offset="100%" stop-color="#800080" />
+                       </linearGradient>
+                    </defs>
+                    <circle id="c4" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                
             </div>
-        
+        </div>
+            
     </section>
-    <section>
-        <div>
+    <section class="lower-container">
+        <div class="div1">
             <h2>stay connected</h2>
             <ul>
-                <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-                <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-                <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
+                <li><img src="image/telephone.png" alt="icon"> <span>+251902903481</span></li>
+                <li><img src="image/email.png" alt="icon"><span>romankebede@gmail.com</span></li>
+                <li><img src="image/location.png" alt="icon"><span>Adiss Ababa, Ethiopia</span></li>
             </ul>
 
         </div>
         
-        <div>
+        <div class="div2">
             <h2>Quick Link</h2>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -90,21 +155,21 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div>
+        <div class="contact">
             <h1>Contact Me</h1>
             <h3>send me a message</h3>
-            <form>
+            <form class="form">
                 <div><input type="text" placeholder="Full Name"></div>
                 <div><input type="text" placeholder="Your Email"></div>
                 <div><textarea rows="5" placeholder="Your message"></textarea></div>
-                <button>submit</button>
+                <button class="button">submit</button>
             </form>
             
             
         </div>
     </section>
-    <footer>
-        copyright <a href="about.html">next Page</a>
+    <footer class="footer">
+        <a href="about.html">next Page</a>
     </footer>
 </body>
 </html>

@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="css/css-grid.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id="menu-icon">&#9776;</label>
+        <nav id="menu">
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
+                <li><a href="Service.html">Service</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <article>
+    <article class="contact-article" >
         <h1>Contact Me</h1>
-        
-        <div>
-            <h2>stay connected</h2>
+        <h2>stay connected</h2>
+        <div class="contact-me">
+            
             <div>
                 <img src="image/facebook.png" alt="icon"> 
                 <p>facebook</p>
@@ -40,15 +43,13 @@
             </div>
     
         </div>
-            <div>
-                <h2>send me a message</h2>
-                <form>
-                    <div><input type="text" placeholder="Full Name"></div>
-                    <div><input type="text" placeholder="Your Email"></div>
-                    <div><textarea rows="10" placeholder="Your message"></textarea></div>
-                    <Div><button>submit</button></Div>
-                </form> 
-            </div>
+            <h2>send me a message</h2>
+            <form class="form">
+                <div><input type="text" placeholder="Full Name"></div>
+                <div><input type="text" placeholder="Your Email"></div>
+                <div><textarea rows="10" placeholder="Your message"></textarea></div>
+                <Div><button class="button">submit</button></Div>
+            </form> 
        
     </article>
            
