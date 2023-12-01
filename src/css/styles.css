@@ -93,6 +93,7 @@ li {
     margin:5px;
   }
   .about-container{
+    background-color:#362072 ;
     display: grid;
     gap: 30px;
   }
@@ -121,6 +122,7 @@ li {
   }
   .lower-container{
     display:grid;  
+    background-color:#362072 ;
   }
   .lower-container .div1  ul,.about-container aside ul{
     list-style-type: none;
@@ -151,6 +153,9 @@ li {
  }
  .button:hover{
     color: white;
+ }
+ footer{
+  padding: 10px;
  }
  footer a{
     color:white;
@@ -277,6 +282,7 @@ circle{
     list-style-type: none;
 }
 .interest-Section{
+  background-color: #362072;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  
 }
@@ -318,6 +324,7 @@ video{
 }
  /* Resume page*/
  .resume{
+    background-color:#362072;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap:20px;
