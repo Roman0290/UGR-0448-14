@@ -15,13 +15,9 @@ li {
     text-decoration: none;
     color: #754ef9;
   }
-  
-  /* Hamburger Menu Styles */
-  
-  #menu-toggle {
+   #menu-toggle {
     display: none;
   }
-  
   #menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -29,7 +25,6 @@ li {
     font-size: 20px;
     user-select: none;
   }
-  
   #menu {
     position: fixed;
     top: 0;
@@ -41,30 +36,26 @@ li {
     overflow: hidden;
     transition: height 0.3s ease;
   }
-  
   #menu-toggle:checked ~ #menu {
-    height: 200px; /* Adjust this value to match the height of your menu */
+    height: 200px; 
   }
-  
   #menu ul {
     padding: 20px;
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-  
   #menu li {
     border-bottom: 1px solid #ccc;
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
-  
   #menu-toggle:checked ~ #menu li {
     opacity: 1;
     transform: translateY(0);
   }
-/* home page*********************************** */
+/* home page*/
   header{
    text-align: right;
    color:#fdfdfd;
@@ -73,21 +64,17 @@ li {
    box-sizing: content-box;
   }
   .home-continer{
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
   }
-
   .home-continer img{
     margin-top: 50px;
     padding: 40px;
     width:15rem;
     height: 20rem;
   }
-
   .home-content h1{
     text-align: center;
   }
@@ -95,7 +82,6 @@ li {
     width: 20rem;
     margin:2px  auto;
   }
-
   .home-content a ,.certifcate a,.work-experience a{
     background-color: #754ef9;
     padding: 5px;
@@ -104,24 +90,19 @@ li {
     text-decoration: underline;
     display: block;
     width:150px;
-    margin: 5px;
-    
+    margin: 5px;  
   }
-
   .about-container{
     display: flex;
     flex-direction: column;
   }
-
   .about-container div{
     order:-1;
-    margin:30px auto;
-    
+    margin:30px auto;  
   }
   .about-container div img{
     width:15rem;
-    height: 15rem;
-    
+    height: 15rem;  
   }
   .about-container aside h1{
     font-size: 35px;
@@ -173,7 +154,6 @@ li {
     text-decoration: underline;
     
  }
- /* *** skil********************************** */
  .skill-container{
     display: flex;
     justify-content: space-between;
@@ -241,9 +221,7 @@ circle{
     top:0;
     left: 0;
    
-}
-
-  
+}  
 }
 #jquery{
     position: absolute;
@@ -251,14 +229,12 @@ circle{
     left: 0;
     
 }
-
 #javascript{
     position: absolute;
     top:0;
     left: 0;
 
 }
-
 @keyframes anim1{
    
     100%{
@@ -284,7 +260,7 @@ circle{
     }
 }
 
- /* About page*************************************************************** */
+ /* About page */
 .about-section{
     text-align: center;
 }
@@ -304,25 +280,18 @@ circle{
 .interest-Section{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap;  
 }
 .interest-Section div{
     text-align: left;
     border:3px solid  #754ef9;
     margin:10px auto;
     width: 22rem;
-    padding: 5px;
-    
-    
+    padding: 5px;  
 }
-/* .project-section {
-    
-} */
 .project-section h1{
     font-size: 35px;
     text-align: center;
-
 }
 .project-section h4{
     font-style: italic;
@@ -350,14 +319,12 @@ video{
     text-align: center;
     border:3px solid  #754ef9;
 }
-
- /* Resume page ******************************************************* */
+ /* Resume page*/
  .resume{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    
  }
  .resume h2{
   text-align: center;
@@ -383,10 +350,9 @@ video{
  .work-experience table{
     margin-bottom: 10px;
  }
- /* service********************************************* */
+ /* service*/
 .service-header{
     text-align: center;
-
 }
 .services{
     
@@ -403,10 +369,7 @@ video{
     text-align: center;
     
 }
-
-
-
- /* contact ********************************************************** */ 
+ /* contact */ 
  .contact-me{
     display: flex;
     flex-direction: column;  
@@ -426,7 +389,6 @@ video{
   width: 200px;
   
 }
-
 .contact-article .form textarea{
   width:100%;
   height: 20rem;
