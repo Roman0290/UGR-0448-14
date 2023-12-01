@@ -156,7 +156,11 @@ li {
     display: block;
     text-align: right;
     text-decoration: underline;
-    
+ 
+ }
+ footer{
+  background-color: #170d35;
+  padding: 10px;
  }
  .skill-container{
   display: flex;
@@ -382,10 +386,6 @@ video{
     padding: 5px;
     text-align: center;
     
-}
-#Service-footer{
-  background-color: #170d35;
-  padding: 10px;
 }
  /* contact */ 
  .contact-me{
