@@ -155,6 +155,7 @@ li {
     color: white;
  }
  footer{
+  background-color: #1f044b;
   padding: 10px;
  }
  footer a{
@@ -322,9 +323,6 @@ video{
     text-align: center;
     border:3px solid  #754ef9;
 }
-#about-footer{
-  background-color: #1f044b;
-}
  /* Resume page*/
  .resume{
     background-color:#362072;
@@ -371,9 +369,6 @@ video{
     max-width: 20rem;
     padding: 5px;
     text-align: center;   
-}
-#service-footer{
-  background-color: #1f044b;
 }
  /* contact  */ 
  .contact-me{
