@@ -498,8 +498,7 @@ video{
         opacity: 1;
         transform: translateY(0);
       }
-    
-    }
+
     .home-continer{
         flex-direction: row;
         justify-content: space-between;
@@ -635,7 +634,7 @@ video{
             color: white;
             display: flex;
             justify-content: space-around;
-            list-style-type:none ;
+            list-style-type: none;
           }
         #menu ul li a {
             color:#f1f1f1;
