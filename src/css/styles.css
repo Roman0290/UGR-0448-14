@@ -3,7 +3,7 @@ body {
     color: #fdfdfd;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'poppins',Arial, sans-serif;
 }  
 li {
     padding: 10px;
@@ -41,7 +41,7 @@ li {
     text-align: center;
   }
   .home-content p{
-    width: 25rem;
+    width: 100%;
     margin:2px  auto;
   }
   .home-content a ,.certifcate a,.work-experience a{
@@ -60,11 +60,14 @@ li {
     background-color:#362072;
     display: flex;
     flex-direction: column;
+    margin: 0px;
   }
   .about-container div{
     order:-1;
     margin:30px auto;  
   }
+  
+  
   .about-container div img{
     border: 2px;
     box-shadow: 4px 4px 40px rgb(14, 14, 60);
@@ -76,8 +79,14 @@ li {
     text-align: center;
   }
   .about-container aside{
-    width: 25rem;
+    width: 100%;
     margin-left:15px;
+  }
+  .about-container aside p{
+    width:90%;
+  }
+  .about-container aside ul{
+    width:70%;
   }
   .about-container aside ul span,.lower-container ul span{
     margin-left: 10px;
@@ -113,10 +122,10 @@ li {
     color: white;
     cursor:pointer;
  }
- .button:active{
+ button:active{
     opacity: 0.8;
  }
- .button:hover{
+ button:hover{
     color: white;
  }
  footer a{
@@ -450,7 +459,7 @@ video{
         cursor: pointer;
         display: inline-block;
         padding: 10px;
-        font-size: 20px;
+        font-size: 40px;
         user-select: none;
 
         
@@ -472,7 +481,7 @@ video{
       
       #menu-toggle:checked ~ #menu {
         height: 200px; 
-      
+      }
       #menu ul {
         padding: 20px;
         list-style-type: none;
