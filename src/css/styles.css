@@ -13,46 +13,8 @@ li {
     text-decoration: none;
     color: #754ef9;
   }
-   #menu-toggle {
-    display: none;
-  }
-  #menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px;
-    font-size: 20px;
-    user-select: none;
-  }
-  #menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 0;
-    border: 1px solid #754ef9;
-    background: #fdfdfd;
-    overflow: hidden;
-    transition: height 0.3s ease;
-  }
-  #menu-toggle:checked ~ #menu {
-    height: 200px; 
-  }
-  #menu ul {
-    padding: 20px;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  #menu li {
-    border-bottom: 1px solid #ccc;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  #menu-toggle:checked ~ #menu li {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
+
 /* home page*/
   header{
    text-align: right;
@@ -414,3 +376,68 @@ video{
 .contact-article input{
   width: 75%;
 }
+@media (min-width:0px) and (max-width: 480px){
+    
+    #menu-toggle {
+        display: none;
+      }
+      
+      #menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px;
+        font-size: 20px;
+        user-select: none;
+
+        
+      }
+      
+      #menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        color:#fdfdfd;
+        width: 200px;
+        height: 0;
+        background: #fdfdfd;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 100;
+        border:1px solid #754ef9;
+      }
+      
+      #menu-toggle:checked ~ #menu {
+        height: 200px; /* Adjust this value to match the height of your menu */
+      }
+      
+      #menu ul {
+        padding: 20px;
+        list-style-type: none;
+      }
+      
+      #menu li {
+        border-bottom: 1px solid #ccc;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      
+      #menu-toggle:checked ~ #menu li {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    
+    }
+    @media (min-width:481px){
+        .header__menu--none{/* change the class*/
+            display: none;
+           }
+            #menu ul {
+                color: white;
+                display: flex;
+                justify-content: space-around;
+              }
+            #menu ul li a {
+                color:#f1f1f1;
+            }
+    }
