@@ -304,19 +304,19 @@ video{
   width: 100%;
   margin: 5px auto;
 }
-.video{
+.project-section__video{
   width:55%;
   margin: auto;
 }
 
 
-.projects{
+.project-section__projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
 }
-.projects div{
+.project-section__projects div{
     text-align: center;
     margin:10px auto;
     width: 20rem;
@@ -631,7 +631,7 @@ video{
         width: 13rem;
         padding: 5px ; 
     }
-    .projects div{
+    .project-section__projects div{
         margin:10px auto;
         width: 13rem;
         padding: 5px;
@@ -762,7 +762,7 @@ video{
             width: 20rem;
             padding: 5px ; 
         }
-        .projects div{
+        .project-section__projects div{
             margin:10px auto;
             width: 20rem;
             padding: 15px;
@@ -933,7 +933,7 @@ video{
             width: 600px;
             padding: 5px ; 
         }
-        .projects div{
+        .project-section__projects div{
             margin:10px auto;
             width: 600px;
             height: 250px;
