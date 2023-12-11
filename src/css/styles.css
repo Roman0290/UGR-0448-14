@@ -73,21 +73,21 @@ li {
     width:15rem;
     height: 15rem;  
   }
-  .about-container aside h1{
+  .about-container__aside h1{
     font-size: 35px;
     text-align: center;
   }
-  .about-container aside{
+  .about-container__aside{
     width: 100%;
     margin-left:15px;
   }
-  .about-container aside p{
+  .about-container__aside p{
     width:90%;
   }
-  .about-container aside ul{
+  .about-container__aside ul{
     width:70%;
   }
-  .about-container aside ul span,.lower-container ul span{
+  .about-container__aside ul span,.lower-container ul span{
     margin-left: 10px;
   }
   .lower-container{
@@ -95,7 +95,7 @@ li {
     display:flex;
     flex-direction:column;
   }
-  .lower-container .div1  ul,.about-container aside ul{
+  .lower-container .div1  ul,.about-container__aside ul{
     list-style-type: none;
   }
   .lower-container .div2  ul{
@@ -534,7 +534,7 @@ video{
         height: 65%;
 
     }   
-    .about-container aside p{
+    .about-container__aside p{
         width:80%;
       } 
 
