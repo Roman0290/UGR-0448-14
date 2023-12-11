@@ -111,7 +111,7 @@ li {
     margin: 0.5rem;
  }
  
- .button{
+ button{
     width:69px;
     height: 25px;
     background-color: #754ef9;
@@ -120,10 +120,12 @@ li {
     box-shadow: 1px 1px 7px black;
     color: white;
     cursor:pointer;
+    text-align: center;
  }
  
  .button:hover{
     color: black;
+    opacity: 0.5;
  }
  .button:active{
   opacity: 0.8;
