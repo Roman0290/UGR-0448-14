@@ -459,6 +459,8 @@ video{
       }
       #menu ul {
         list-style-type: none;
+        padding: 0px;
+        margin: 0px;
       }
       
       #menu li {
@@ -516,6 +518,8 @@ video{
       }
       #menu ul {
         list-style-type: none;
+        padding: 0px;
+        margin: 0px;
       }
       
       #menu li {
