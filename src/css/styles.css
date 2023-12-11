@@ -44,7 +44,7 @@ li {
     width: 100%;
     margin:2px  auto;
   }
-  .home-content a ,.certifcate a,.work-experience a{
+  .home-content a ,.resume__certifcate a,.resume__work-experience a{
     background-color: #754ef9;
     padding: 5px;
     color: white;
@@ -341,29 +341,29 @@ video{
     box-shadow: 2px ;
       
  }
- .work-experience table,td{
+ .resume__work-experience table,td{
     border:1px solid white;
     border-collapse: collapse;
     
  }
- .work-experience table{
+ .resume__work-experience table{
     margin-bottom: 10px;
  }
- #resume-footer{
+ #resume__footer{
   padding: 10px;
  }
  /* service*/
-.service-header{
+.service__header{
     text-align: center;
 }
-.services{
+.service__header--services{
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px auto;
 }
-.services div{
+.service__header--services div{
     border:1px solid #754ef9;
     margin:10px auto;
     width: 20rem;
@@ -387,18 +387,29 @@ video{
   font-size: 24px;
 }
 .contact-me div{
-  margin: 10px 10px 10px 100px ;
-  width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px 10px 100px ;
+    width: 200px;
   
+}
+.contact-me img{
+    width:5%;
+    margin: 10px;
+    padding: 10px;
 }
 .contact-article .form textarea{
   width:100%;
   height: 20rem;
+  padding: 5px;
+  border-radius: 15px;
 }
 .contact-article input{
-  width: 75%;
+    border-radius: 10px;
+    width: 75%;
+    padding: 10px;
 }
-/*mobile*/
+/*mobile-portrait*/
 @media (min-width:0px) and (max-width: 480px){
     
     #menu-toggle {
@@ -621,7 +632,7 @@ video{
         width: 16rem;   
      }
      /*services*/
-     .services div{
+     .service__header--services div{
         margin:15px auto;
         width: 14rem;
         
@@ -759,11 +770,11 @@ video{
             width: 22rem;   
          }
          /*services*/
-         .services div{
+         .service__header--services div{
             margin:15px auto;
             width:370px;  
         }
-        .services img{
+        .service__header--services img{
             width:25%;
         }
         /*contact page*/
@@ -771,8 +782,11 @@ video{
             flex-direction: row;  
             flex-wrap: wrap;
          }
+           .contact-me__icon{
+            font-size: 15px;
+        }
          .contact-me div {
-            width:20rem;
+            width:50%;
             margin:10px auto;
          }
          form div .button{
@@ -824,7 +838,7 @@ video{
         .home-continer .home-content p{
             width: 90%;
         }
-        .certifcate a,.work-experience a{
+        .resume__certifcate a,.resume__work-experience a{
             width:300px;
         }
         .about-container{
@@ -914,13 +928,13 @@ video{
          }
         
          /*services*/
-         .services div{
+         .service__header--services div{
             margin:15px auto;
             width: 600px;
             height: 400px;
             
         }
-        .services img{
+        .service__header--services img{
             width:25%;
         }
         /*contact page*/
@@ -937,5 +951,25 @@ video{
             height: 50px;
             border-radius: 10px;
         }
+        .contact-article .form textarea{
+            width:100%;
+            height: 20rem;
+            padding: 15px;
+            border-radius: 20px;
+          }
+        .contact-me__icon{
+            font-size: 15px;
+        }
+        .contact-me img{
+            width:5%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .contact-article input{
+            display: inline-block;
+            border-radius: 20px;
+            width: 60%;
+            padding: 10px;
+          }
     
 }
