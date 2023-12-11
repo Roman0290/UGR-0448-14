@@ -827,7 +827,7 @@ video{
       margin: 100px 10px;
     }
    
-    .header__menu--none{/* change the class*/
+    .header__menu--none{
         display: none;
        }
         #menu ul {
