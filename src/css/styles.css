@@ -31,11 +31,12 @@ li {
   }
   .home-continer img{
     border: 2px;
+    border-radius: 10px;
     box-shadow: 4px 4px 40px rgb(14, 14, 60);
     margin-top: 50px;
     padding: 40px;
-    width:15rem;
-    height: 20rem;
+    width:75%;
+    height: 75%;
   }
   .home-content h1{
     text-align: center;
@@ -51,7 +52,7 @@ li {
     border-radius: 10px;
     display: block;
     width:150px;
-    margin: 10px;  
+    margin: 10px auto;  
     text-align: center;
     box-shadow: 4px 4px 20px black;
   }
@@ -69,9 +70,10 @@ li {
   
   .about-container div img{
     border: 2px;
+    border-radius: 10px;
     box-shadow: 4px 4px 40px rgb(14, 14, 60);
-    width:15rem;
-    height: 15rem;  
+    max-width:400px;
+      
   }
   .about-container__aside h1{
     font-size: 35px;
@@ -121,12 +123,13 @@ li {
     color: white;
     cursor:pointer;
  }
- button:active{
-    opacity: 0.8;
+ 
+ .button:hover{
+    color: black;
  }
- button:hover{
-    color: white;
- }
+ .button:active{
+  opacity: 0.8;
+}
  footer a{
     color:white;
     display: block;
@@ -266,6 +269,7 @@ circle{
 }
 .about-article__img img{
     border: 2px;
+    border-radius: 10px;
     box-shadow: 4px 4px 40px rgb(14, 14, 60);
 }
 .about-article__description ul{
@@ -282,7 +286,8 @@ circle{
 }
 .interest-Section div{
     text-align: left;
-    border:3px solid  #754ef9;
+    border:2px solid  #754ef9;
+    border-radius: 10px;
     margin:10px auto;
     width: 22rem;
     padding: 5px;  
@@ -301,8 +306,11 @@ video{
   margin: 5px auto;
 }
 .video{
-  max-width: 100%;
+  width:55%;
+  margin: auto;
 }
+
+
 .projects{
     display: flex;
     flex-direction: row;
@@ -315,7 +323,8 @@ video{
     width: 20rem;
     padding: 5px;
     text-align: center;
-    border:3px solid  #754ef9;
+    border:2px solid  #754ef9;
+    border-radius: 10px;
 }
  /* Resume page*/
  .resume{
@@ -332,7 +341,8 @@ video{
   margin: 5px;
 }
  .resume div{
-    border:3px solid #754ef9;
+    border:2px solid #754ef9;
+    border-radius: 10px;
     margin:10px auto;
     width: 20rem;
     padding: 5px;
@@ -365,6 +375,7 @@ video{
 }
 .service__header--services div{
     border:1px solid #754ef9;
+    border-radius: 10px;
     margin:10px auto;
     width: 20rem;
     padding: 5px;
@@ -411,6 +422,9 @@ video{
 }
 /*mobile-portrait*/
 @media (min-width:0px) and (max-width: 480px){
+  section{
+    margin: 100px 5px;
+  }
     
     #menu-toggle {
         display: none;
@@ -430,7 +444,7 @@ video{
         position: fixed;
         top: 0;
         right: 0;
-        width: 200px;
+        width: 150px;
         height: 0;
         background: #fdfdfd;
         overflow: hidden;
@@ -457,15 +471,13 @@ video{
         opacity: 1;
         transform: translateY(0);
       }
-    .continer{
-        width: 50%;
-    }
+    
 }
 /* mobile-landscape*/
 @media (min-width:481px) and (max-width: 768px){
-    * {
-        font-size: 18px;
-    }
+  section{
+    margin: 100px 5px;
+  }
     #menu-toggle {
         display: none;
       }
@@ -521,12 +533,6 @@ video{
     .home-continer div{
         width: 45%;
     }
-
-    .home-continer img{
-        width: 75%;
-        height: 75%;
-    }
-
     .home-continer .home-content p{
         width: 90%;
     }
@@ -539,10 +545,8 @@ video{
         padding: 0px;
     }
     .about-container div img{
-        margin-top: 50%;
-        margin-bottom: 0;
+        margin-top: 70px;
         width:100%;
-        height: 65%;
 
     }   
     .about-container__aside p{
@@ -650,12 +654,10 @@ video{
 }
 /*tablet*/
 @media (min-width:769px) and (max-width:1279px) {
-    *{
-        font-size:24px ;
-    }
-    p{
-        font-style: 0.7em;
-    }
+  section{
+    margin: 100px 5px;
+  }
+   
     .header__menu--none{/* change the class*/
         display: none;
        }
@@ -676,15 +678,7 @@ video{
         .home-continer div{
             width: 50%;
         }
-        .home-content{
-            margin-top: 25%;
-        }
-    
-        .home-continer img{
-            width: 75%;
-            height: 75%;
-        }
-    
+   
         .home-continer .home-content p{
             width: 90%;
         }
@@ -694,15 +688,12 @@ video{
         .about-container div{
             order: 2;
             margin:10px auto ;
-        }
+        } 
         .about-container div img{
-            margin-top: 15%;
-            margin-bottom: 0;
-            width:100%;
-            height: 90%;
-            
-    
-        }    
+          margin-top: 70px;
+
+  
+      } 
     
         .skill-container{
             justify-content: space-evenly;
@@ -789,10 +780,22 @@ video{
             width:50%;
             margin:10px auto;
          }
+
+         .contact-article .form textarea{
+          width:50%
+        }
          form div .button{
             width:150px;
             height: 50px;
             border-radius: 10px;
+        }
+        .inputs{
+          display: flex;
+          
+        }
+
+        .inputs>div{
+          width:23%;
         }
     
     
@@ -800,12 +803,10 @@ video{
 
 /*desktop*/
 @media (min-width:1280px) {
-    * {
-        font-size: 30px;
+    section{
+      margin: 100px 5px;
     }
-    p{
-        font-size: 0.7em;
-    }
+   
     .header__menu--none{/* change the class*/
         display: none;
        }
@@ -823,18 +824,15 @@ video{
             justify-content: space-between;
             align-items: center;
         }
+        .header__list{
+          margin: 0;
+        }
         .home-continer div{
             width: 45%;
         }
         .home-content{
             margin-top: 25%;
         }
-    
-        .home-continer img{
-            width: 75%;
-            height: 75%;
-        }
-    
         .home-continer .home-content p{
             width: 90%;
         }
@@ -852,20 +850,29 @@ video{
             margin-top: 15%;
             margin-bottom: 0;
             width:100%;
-            height: 90%;
+
             
     
-        }    
+        }  
+        .about-container__aside{
+          width:50%;
+        }  
+
+        
     
         .skill-container{
             justify-content: space-evenly;
     
         }
     
-        .skill-container .skill{
-            width: 45%;
+        .skill-container #skill{
+            width: 22%;
             margin: auto;
             padding: 10px;
+        }
+
+        .number{
+          font-size: 15px;
         }
     
         .lower-container{
@@ -940,7 +947,6 @@ video{
         /*contact page*/
         .contact-me{
             flex-direction: row;  
-            flex-wrap: wrap;
          }
          .contact-me div {
             width:20rem;
@@ -952,10 +958,9 @@ video{
             border-radius: 10px;
         }
         .contact-article .form textarea{
-            width:100%;
-            height: 20rem;
+            width:50%;
             padding: 15px;
-            border-radius: 20px;
+            border-radius: 10px;
           }
         .contact-me__icon{
             font-size: 15px;
@@ -967,9 +972,20 @@ video{
         }
         .contact-article input{
             display: inline-block;
-            border-radius: 20px;
-            width: 60%;
+            border-radius: 8px;
+            width: 100%;
             padding: 10px;
           }
+
+        .inputs{
+          display: flex;
+          column-gap: 20px;
+        }
+
+        .inputs>div{
+          width:23%;
+        }
+
+        
     
 }
