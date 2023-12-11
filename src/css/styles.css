@@ -99,10 +99,10 @@ li {
     flex-direction:column;
     margin-bottom: 0px;
   }
-  .lower-container .div1  ul,.about-container__aside ul{
+  .lower-container__div1  ul,.about-container__aside ul{
     list-style-type: none;
   }
-  .lower-container .div2  ul{
+  .lower-container__div2  ul{
     text-decoration: underline;
     text-decoration-color:#754ef9 ;
   }
@@ -577,7 +577,7 @@ video{
         justify-content: space-around;
     }
 
-    .lower-container .div1 ul{
+    .lower-container__div1 ul{
         padding: 0;
         font-size: 0.8rem;
     }
@@ -589,16 +589,16 @@ video{
     }
 
 
-    .lower-container .contact form input,.lower-container .contact h2{
+    .lower-container__contact form input,.lower-container__contact h2{
         width: 80%;
     }
 
-    .lower-container .contact form .button {
+    .lower-container__contact form .button {
         margin-left:10px;
         
     }
 
-    .lower-container .contact form textarea{
+    .lower-container__contact form textarea{
         width: 90%;
         height: 40%;
     }
@@ -725,7 +725,7 @@ video{
             justify-content: space-around;
         }
     
-        .lower-container .div1 ul{
+        .lower-container__div1 ul{
             padding: 0;
             font-size: 0.8rem;
         }
@@ -737,16 +737,16 @@ video{
         }
     
     
-        .lower-container .contact form input,.lower-container .contact h2{
+        .lower-container__contact form input,.lower-container__contact h2{
             width: 80%;
         }
     
-        .lower-container .contact form .button {
+        .lower-container__contact form .button {
             margin-left:10px;
             
         }
     
-        .lower-container .contact form textarea{
+        .lower-container__contact form textarea{
             width: 90%;
             height: 40%;
         }
@@ -895,7 +895,7 @@ video{
             justify-content: space-around;
         }
     
-        .lower-container .div1 ul{
+        .lower-container__div1 ul{
             padding: 0;
             font-size: 0.8rem;
         }
@@ -905,16 +905,16 @@ video{
         .lower-container div h1{
             font-size: 18px;
         }
-        .lower-container .contact form input,.lower-container .contact h2{
+        .lower-container__contact form input,.lower-container__contact h2{
             width: 80%;
         }
     
-        .lower-container .contact form .button {
+        .lower-container__contact form .button {
             margin-left:10px;
             
         }
     
-        .lower-container .contact form textarea{
+        .lower-container__contact form textarea{
             width: 90%;
             height: 40%;
         }
