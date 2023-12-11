@@ -146,7 +146,7 @@ li {
 #skill-container{
   margin: 10px;
 }
-.skill-header{
+.skill-container__header{
   text-align: center;
 }
 #skill{
@@ -537,6 +537,9 @@ video{
     .about-container__aside p{
         width:80%;
       } 
+    .about-container__aside--email{
+      display: none;
+    }
 
     .skill-container{
         justify-content: space-around;
