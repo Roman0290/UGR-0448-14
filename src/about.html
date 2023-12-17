@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/blumaAdd.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="body">
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbar-burger" id="burger">
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+            </a>
+            <ul class="navbar-menu is-justify-content-space-around " id="nav-links" >
+                <li><a class="navbar-item" href="home.html" >Home</a></li>
+                <li><a class="navbar-item" href="about.html">About</a></li>
+                <li><a class="navbar-item" href="resume.html">Resume</a></li>
+                <li><a class="navbar-item" href="Service.html">Service</a></li>
+                <li><a class="navbar-item" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>ABOUT ME</h1>
-        <p><q>  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
+    <section class="section has-text-centered">
+        <h1 class="title is-size-1 ">ABOUT ME</h1>
+        <p class="subtitle is-size-4 is-italic"><q>  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
     </section>
-    <div>
-        <img src="image/image2.png" alt="image">
-    </div>
-        
-    <article>
-        <h2>My Bio</h2>
-          <div><audio src="audio-video/who-am-i.ogg" controls></audio></div>
-          <h3>stay contact</h3>
-          <ul>
-            <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-            <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-            <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-            <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
-          </ul>
+    <article class="section">
+        <div class="columns">
+            <div class="column">
+                <img src="image/image2.png" alt="image">
+            </div>
+            <div class="column">
+                <h2>My Bio</h2>
+                <div class="about-span"><audio src="audio-video/who-am-i.ogg" controls></audio></div>
+                <h3>stay contact</h3>
+                <ul>
+                  <li ><img src="image/user.png" alt="icon"><span>Roman Kebede Debissa</span> </li>
+                  <li ><img src="image/telephone.png" alt="icon"> <span>+251902903481</span></li>
+                  <li ><img src="image/email.png" alt="icon"><span>romankebede@gmail.com</span></li>
+                  <li><img src="image/location.png" alt="icon"><span>Adiss Ababa, Ethiopia</span></li>
+                </ul>
+            </div>
+        </div>
         
     </article>
-    <section>
-        <div>
-            <h2>interest</h2>
-            <ul>
-                <li>Problem-solving</li>
-                <li>Codingand programing</li>
-                <li>Continous Learning</li>
-                <li>collaboration and team work</li>
-            </ul>
+    <section class="Section">
+        <div class="columns is-justify-content-space-around ">
+            <div class="column is-5  ">
+                <div class="box">
+                    <h2 class="title is-size-4">Interest</h2>
+                    <ul >
+                        <li>Problem-solving</li>
+                        <li>Codingand programing</li>
+                        <li>Continous Learning</li>
+                        <li>collaboration and team work</li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="column is-5">
+                <div class="box">
+                    <h2 class="title is-size-4">Hobbis</h2>
+                    <ul >
+                        <li>Graphics Design</li>
+                        <li>Photography</li>
+                        <li>Writing/Blogging</li>
+                        <li>Teaching or Monitaring</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>hobbis</h2>
-            <ul>
-                <li>Graphics Design</li>
-                <li>Photography</li>
-                <li>Writing/Blogging</li>
-                <li>Teaching or Monitaring</li>
-            </ul>
-        </div>
+        
     </section>
-    <section>
-        <h1>project</h1>
+    <section class="section">
         
-        <div><video src="audio-video/project2.mp4" width= 500  controls></video></div>
-            
+        <h1 class="title is-size-1 has-text-centered">project</h1>
         
-        <h4>video of my projects review</h4>
-        <div>
-            <h2>Website Development</h2>
-            <p>Designed and built functional and visually appealing websites.</p>
+        <div class="project-section__video is-55 is-flex is-justify-content-center"><video src="audio-video/project2.mp4"   controls></video></div>
+        <h4 class="subtitle is-size-6 is-italic has-text-centered">video of my projects review</h4>
+        <div class="columns is-multiline">
+            <div class="column is-6-tablet is-4-desktop ">
+                <div class="box">
+                    <h2 class="subtitle is-size-4 ">Website Development</h2>
+                    <p>Designed and built functional and visually appealing websites.</p>
+                </div>
+                
+            </div>
+            <div class="column is-6-tablet is-4-desktop">
+                <div class="box">
+                    <h2 class="subtitle is-size-4"> E-commerce Website</h2>
+                    <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
+                </div>
+                
+            </div>
+            <div class="column is-6-tablet is-4-desktop  ">
+                <div class="box">
+                    <h2 class="subtitle is-size-4">Finance Tracking App</h2>
+                    <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2> E-commerce Website</h2>
-            <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
-        </div>
-        <div>
-            <h2>Finance Tracking App</h2>
-            <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
-        </div>
+        
 
     </section>
-    <footer>
-         <a href="resume.html">next Page</a>
+    <footer class="footer py-2 ">
+         <a  href="resume.html">next Page</a>
     </footer>
+    <script>
+        // mobile menu
+        const burgerIcon= document.querySelector('#burger');
+        const navbarMenu= document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () =>{
+            navbarMenu.classList.toggle('is-active')
+        })
+    </script>
 </body>
 </html>

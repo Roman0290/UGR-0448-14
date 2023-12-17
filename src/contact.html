@@ -4,51 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/blumaAdd.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="body">
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbar-burger" id="burger">
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+            </a>
+            <ul class="navbar-menu is-justify-content-space-around " id="nav-links" >
+                <li><a class="navbar-item" href="home.html" >Home</a></li>
+                <li><a class="navbar-item" href="about.html">About</a></li>
+                <li><a class="navbar-item" href="resume.html">Resume</a></li>
+                <li><a class="navbar-item" href="Service.html">Service</a></li>
+                <li><a class="navbar-item" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <article>
-        <h1>Contact Me</h1>
-        
-        <div>
-            <h2>stay connected</h2>
-            <div>
-                <img src="image/facebook.png" alt="icon"> 
-                <p>facebook</p>
+    <article class="contact-article" >
+        <h1 class="title is-size-1">Contact Me</h1>
+        <h2 class="subtitle is-size-4">stay connected</h2>
+        <div class="columns">
+            
+            <div class="column">
+                <img class="icon contact-me--icon" src="image/facebook.png" alt="icon"> 
+                <p><a href="https://www.facebook.com/">facebook</a></p>
             </div>
-            <div>
-                <img src="image/linkedin.png" alt="icon"> 
-                <p>linkdin</p>
+            <div class="column">
+                <img class="icon contact-me--icon" src="image/linkedin.png" alt="icon"> 
+                <p><a href="https://www.linkedin.com/">linkdin</a></p>
             </div>
-            <div>
-                <img src="image/instagram.png" alt="icon"> 
-                <p>instagram</p>
+            <div class="column">
+                <img class="icon contact-me--icon" src="image/instagram.png" alt="icon"> 
+                <p><a href="https://www.instagram.com/">instagram</a></p>
             </div>
-            <div>
-                <img src="image/email.png" alt="icon"> 
-                <p>Email</p>
+            <div class="column">
+                <img class="icon contact-me--icon" src="image/email.png" alt="icon"> 
+                <p><a hre="https://www.facebook.com/"> Email</a></p>
             </div>
     
         </div>
-            <div>
-                <h2>send me a message</h2>
-                <form>
-                    <div><input type="text" placeholder="Full Name"></div>
-                    <div><input type="text" placeholder="Your Email"></div>
-                    <div><textarea rows="10" placeholder="Your message"></textarea></div>
-                    <Div><button>submit</button></Div>
-                </form> 
-            </div>
+            <h2 class="subtitle is-size-4">send me a message</h2>
+            <form class="form">
+                <div class="inputs">
+                    <div><input class="input mt-2 " type="text" placeholder="Full Name"></div>
+                    <div><input class="input mt-2" type="text" placeholder="Your Email"></div>
+                </div>
+                
+                <div><textarea class="textarea mt-2" rows="10" placeholder="Your message"></textarea></div>
+                <Div><button class="button is-rounded is-link mt-3">submit</button></Div>
+            </form> 
        
     </article>
            

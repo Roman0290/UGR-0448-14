@@ -4,56 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/blumaAdd.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="body">
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbar-burger" id="burger">
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+                <span class="has-text-white"></span>
+            </a>
+            <ul class="navbar-menu is-justify-content-space-around " id="nav-links" >
+                <li><a class="navbar-item" href="home.html" >Home</a></li>
+                <li><a class="navbar-item" href="about.html">About</a></li>
+                <li><a class="navbar-item" href="resume.html">Resume</a></li>
+                <li><a class="navbar-item" href="Service.html">Service</a></li>
+                <li><a class="navbar-item" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>My Services</h1>
-        <P>What i do  for my client</P>
+    <section class="section has-text-centered">
+        <h1 class="title is-size-1">My Services</h1>
+        <P class="subtitle is-size-4">What i do  for my client</P>
     </section>
-    <div>
-        <div>
-            <img src="image/web-design.png" alt="icon">
-            <h2>website design</h2>
-            <p>I design visually appealing websites with a focus on user experience and responsiveness.</p>
+    <div class="columns is-justify-content-space-around is-multiline">
+        <div class="column is-5 ">
+            <div class="box has-text-centered">
+                <div class="container"><img  src="image/web-design.png" alt="icon"></div>
+                <h2 class="subtitle is-size-2  mb-1 " >website design</h2>
+                <p class="subtitle is-size-4">I design visually appealing websites with a focus on user experience and responsiveness.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/web-development.png" alt="icon">
-            <h2>web devlopment</h2>
-            <p> I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+        <div class="column is-5">
+            <div class="box has-text-centered">
+                <img src="image/web-development.png" alt="icon">
+                <h2 class="subtitle is-size-2  mb-1">web devlopment</h2>
+                <p class="subtitle is-size-4"> I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/cources.png" alt="icon">
-            <h2>courses</h2>
-            <p>I provide online courses for HTML, CSS, and JavaScript, covering the fundamentals of web development.</p>
+        <div class="column is-5">
+            <div class="box has-text-centered">
+                <img src="image/cources.png" alt="icon">
+                <h2 class="subtitle is-size-2  mb-1">courses</h2>
+                <p class="subtitle is-size-4">I provide online courses for HTML, CSS, and JavaScript, covering the fundamentals of web development.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/photograpy.png" alt="icon">
-            <h2>Photography</h2>
-            <p>I offer professional photo editing services to enhance and retouch images according to your specific requirements.</p>
+        <div class="column is-5">
+            <div class="box has-text-centered">
+                <img src="image/photograpy.png" alt="icon">
+                <h2 class="subtitle is-size-2  mb-1">Photography</h2>
+                <p class="subtitle is-size-4">I offer professional photo editing services to enhance and retouch images according to your specific requirements.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/consltancy.png" alt="icon">
-            <h2>Consultancey</h2>
-            <p>I offer counseling services for learning strategies and best practices to optimize your learning experience.</p>
+        <div class="column is-5">
+            <div class="box has-text-centered">
+                <img src="image/consltancy.png" alt="icon">
+                <h2 class="subtitle is-size-2  mb-1">Consultancey</h2>
+                <p class="subtitle is-size-4">I offer counseling services for learning strategies and best practices to optimize your learning experience.</p>
+       
+            </div>
         </div>
         
         
     </div>
 
-    <footer>
+    <footer  class="footer py-2" id="Service-footer">
         <P><a href="contact.html">contact me</a></P>
     </footer>
+    <script>
+        // mobile menu
+        const burgerIcon= document.querySelector('#burger');
+        const navbarMenu= document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () =>{
+            navbarMenu.classList.toggle('is-active')
+        })
+    </script>
 
 </body>
 </html>
