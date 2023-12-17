@@ -46,7 +46,7 @@ setInterval(updateNumber3, 20);
 // contact-page
 // Function to handle form submission
 function handleSubmit(event) {
-    event.preventDefault(); // Prevent form submission from refreshing the page
+    event.preventDefault(); 
   
     // Get the values from the form inputs
     const fullName = document.getElementById("full-name").value;
@@ -68,10 +68,6 @@ function handleSubmit(event) {
     return; // Stop form submission if any fields are empty
   }
 
-  
-    // Perform any necessary validation or processing of the form data
-    // ...
-  
     // Display a success message
     alert("Form submitted successfully!");
   
