@@ -1,3 +1,5 @@
+//home page 
+
 let number = document.getElementById("number");
 let number1 = document.getElementById("number1");
 let number2 = document.getElementById("number2");
@@ -50,6 +52,22 @@ function handleSubmit(event) {
     const fullName = document.getElementById("full-name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+
+      // Check if any fields are empty
+  if (fullName.trim() === "" || email.trim() === "" || message.trim() === "") {
+    // Display an error message
+    const errorMessage = document.createElement("p");
+    errorMessage.textContent = "Please fill in all fields.";
+    document.getElementById("contact-form").appendChild(errorMessage);
+
+    // Remove the error message after 2 seconds
+    setTimeout(() => {
+      errorMessage.remove();
+    }, 2000);
+
+    return; // Stop form submission if any fields are empty
+  }
+
   
     // Perform any necessary validation or processing of the form data
     // ...
