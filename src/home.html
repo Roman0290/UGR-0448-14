@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css/blumaAdd.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body class="body">
+<body class="body has-background-info-light">
         
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar has-background-info-dark">
             <a class="navbar-burger" id="burger">
                 <span class="has-text-white"></span>
                 <span class="has-text-white"></span>
                 <span class="has-text-white"></span>
             </a>
-            <ul class="navbar-menu is-justify-content-space-around " id="nav-links" >
-                <li><a class="navbar-item" href="home.html" >Home</a></li>
-                <li><a class="navbar-item" href="about.html">About</a></li>
-                <li><a class="navbar-item" href="resume.html">Resume</a></li>
-                <li><a class="navbar-item" href="Service.html">Service</a></li>
-                <li><a class="navbar-item" href="contact.html">Contact</a></li>
+            <ul class="navbar-menu is-justify-content-space-around has-background-info " id="nav-links" >
+                <li><a class="navbar-item has-text-white" href="home.html" >Home</a></li>
+                <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+                <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+                <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+                <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +31,7 @@
                     <img class="box" src="image/image1.png" alt="personal-profile-image">
                 </div>
                 <div class="column is-7 ">
-                    <h1 class="title is-size-1 has-text-centered">Hello,I am Roman <span> Debissa</span></h1>
+                    <h1 class="title is-size-1 has-text-centered">Hello,I am Roman <span class="has-text-info-dark"> Debissa</span></h1>
                     <p class="subtitle is-size-4">An accomplished and detail-oriented web developer, specializing in the creation of visually captivating and user-friendly websites. </p>
                     <a href="about.html" class="button is-link is-rounded  ">More Me</a>
                 </div>
@@ -42,7 +41,7 @@
     <section class="section">
         <div class="columns is-vcentered">
             <aside class="column is-7" >   
-                <h1 class=" title is-size-1 has-text-centered">who am i</h1>
+                <h1 class=" title is-size-1 has-text-centered has-text-info-dark">who am i</h1>
                 <p class="subtitle is-size-4">I'm Roman, a skilled web developer experienced in front-end and back-end development. I create responsive websites and applications using HTML, CSS, JavaScript, and frameworks. With a strong problem-solving mindset, I deliver high-quality solutions, exceeding client expectations. Collaboration is my strength, bringing ideas to life and crafting exceptional user experiences. I'm dedicated to continuous learning and pushing the boundaries of web development.</p>
                 <ul>
                     <li><img src="image/user.png" alt="icon"><span>Roman Kebede Debissa</span> </li>
@@ -57,13 +56,13 @@
     
         </div>
     </section>
-    <section class="section" id="skill-container" >
+    <section class="section has-background-white" id="skill-container" >
         <div class="container has-text-centered" id="skill">
-                <h1 class="title is-size-1">Skills</h1>
-                <h3 class="subtitle is is-size-4">I work hard to improve my skills regularly</h3>
+                <h1 class="title is-size-1 has-text-info-dark">Skills</h1>
+                <h3 class="subtitle is is-size-4 has-text-info mb-4" >I work hard to improve my skills regularly</h3>
             
         </div>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline mt-4">
             <div class="column is-6-tablet is-3-desktop">
                 <div class="outer">
                     <div class="inner">
@@ -164,7 +163,7 @@
                 <h1 class="title is-size-4">Contact Me</h1>
                 <h3 class="subtitle is-size-6">send me a message</h3>
                 <form class="form">
-                    <div><input class="input  mb-1" type="text" placeholder="Full Name"></div>
+                    <div><input class="input mb-1" type="text" placeholder="Full Name"></div>
                     <div><input class="input mt-1 mb-1" type="text" placeholder="Your Email"></div>
                     <div><textarea class="textarea mt-1 mb-1" rows="5" placeholder="Your message"></textarea></div>
                     <button class="button is-rounded mt-2">submit</button>
@@ -175,8 +174,8 @@
         </div>
         
     </section>
-    <footer class="footer py-2 ">
-        <a  href="about.html">next Page</a>
+    <footer class="footer py-2 has-background-info-dark  ">
+        <a  class="has-text-white" href="about.html">next Page</a>
     </footer>
     <script>
         // mobile menu

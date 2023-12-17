@@ -6,28 +6,27 @@
     <title>Contact Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="css/blumaAdd.css">
 </head>
-<body class="body">
+<body class="body has-background-info-light">
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar has-background-info-dark">
             <a class="navbar-burger" id="burger">
                 <span class="has-text-white"></span>
                 <span class="has-text-white"></span>
                 <span class="has-text-white"></span>
             </a>
-            <ul class="navbar-menu is-justify-content-space-around " id="nav-links" >
-                <li><a class="navbar-item" href="home.html" >Home</a></li>
-                <li><a class="navbar-item" href="about.html">About</a></li>
-                <li><a class="navbar-item" href="resume.html">Resume</a></li>
-                <li><a class="navbar-item" href="Service.html">Service</a></li>
-                <li><a class="navbar-item" href="contact.html">Contact</a></li>
+            <ul class="navbar-menu is-justify-content-space-around has-background-info " id="nav-links" >
+                <li><a class="navbar-item has-text-white " href="home.html" >Home</a></li>
+                <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+                <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+                <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+                <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <article class="contact-article" >
-        <h1 class="title is-size-1">Contact Me</h1>
-        <h2 class="subtitle is-size-4">stay connected</h2>
+        <h1 class="title is-size-1 has-text-info-dark">Contact Me</h1>
+        <h2 class="subtitle is-size-4 has-text-info">stay connected</h2>
         <div class="columns">
             
             <div class="column">
@@ -48,7 +47,7 @@
             </div>
     
         </div>
-            <h2 class="subtitle is-size-4">send me a message</h2>
+            <h2 class="subtitle is-size-4 has-text-info">send me a message</h2>
             <form class="form">
                 <div class="inputs">
                     <div><input class="input mt-2 " type="text" placeholder="Full Name"></div>
@@ -60,6 +59,15 @@
             </form> 
        
     </article>
+    <script>
+        // mobile menu
+        const burgerIcon= document.querySelector('#burger');
+        const navbarMenu= document.querySelector('#nav-links');
+
+        burgerIcon.addEventListener('click', () =>{
+            navbarMenu.classList.toggle('is-active')
+        })
+    </script>
            
             
     
