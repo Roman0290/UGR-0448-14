@@ -4,52 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
+<body class="body bg-blue-100">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar bg-blue-800 text-white p-4">
+        
+            <div class="flex justify-end px-4 cursor-pointer lg:hidden" id="burger">
+                <svg class="text-indigo-100 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
+    
+            </div>
+            
+              
+            <ul class="hidden lg:block xl:block lg:flex lg:justify-around xl:flex xl:justify-around  " id="menu">
+              <li><a class="navbar-item has-text-white" href="home.html" >Home</a></li>
+              <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+              <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+              <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+              <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>ABOUT ME</h1>
-        <p><q>  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
+    <section class="about-section p-10">
+        <h1 class="text-4xl text-center text-blue-700  font-bold p-2 ">ABOUT ME</h1>
+        <p class="text-center text-2xl text-gray-600"><q class="italic">  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
     </section>
-    <div>
-        <img src="image/image2.png" alt="image">
-    </div>
-        
-    <article>
-        <h2>My Bio</h2>
-          <div><audio src="audio-video/who-am-i.ogg" controls></audio></div>
-          <h3>stay contact</h3>
-          <ul>
-            <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-            <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-            <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-            <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
-          </ul>
+    <article class="about-article grid grid-cols-12 ">
+        <div class="about-article__img col-span-5">
+            <img class="border-gray-100 shadow-lg rounded m-10 p-4 bg-white" src="image/image2.png" alt="image">
+        </div>
+        <div class="about-article__description col-span-7 p-10" >
+            <h2 class=" text-2xl text-blue-500">My Bio</h2>
+            <div class="about-span"><audio src="audio-video/who-am-i.ogg" controls></audio></div>
+            <h3 class="pt-5 pb-5 text-gray-700">stay contact</h3>
+            <ul class="grid px-5 text-gray-600">
+                <li><img class="inline-flex mr-2" src="image/user.png" alt="icon"><span class="inline-flex">Roman Kebede Debissa</span> </li>
+                <li><img class="inline-flex mr-2" src="image/telephone.png" alt="icon"> <span class="inline-flex">+251902903481</span></li>
+                <li><img class="inline-flex mr-2" src="image/email.png" alt="icon"><span class="inline-flex">romankebede@gmail.com</span></li>
+                <li><img class="inline-flex mr-2" src="image/location.png" alt="icon"><span class="inline-flex">Adiss Ababa, Ethiopia</span></li>
+            </ul>
+        </div>
+         
         
     </article>
-    <section>
-        <div>
-            <h2>interest</h2>
-            <ul>
+    <section class="interest-Section grid grid-cols-12 p-10 bg-white">
+        <div class="col-span-5 border-gray-200 shadow rounded m-10 p-10">
+            <h2 class="text-2xl font-bold text-blue-500 pb-3">Interest</h2>
+            <ul class="list-disc">
                 <li>Problem-solving</li>
                 <li>Codingand programing</li>
                 <li>Continous Learning</li>
                 <li>collaboration and team work</li>
             </ul>
         </div>
-        <div>
-            <h2>hobbis</h2>
-            <ul>
+        <div class="col-span-5 border-gray-200 shadow rounded m-10 p-10">
+            <h2 class="text-2xl font-bold text-blue-500 pb-3">Hobbis</h2>
+            <ul class="list-disc">
                 <li>Graphics Design</li>
                 <li>Photography</li>
                 <li>Writing/Blogging</li>
@@ -57,28 +71,34 @@
             </ul>
         </div>
     </section>
-    <section>
-        <h1>project</h1>
+    <section class="project-section p-10">
         
-        <div><video src="audio-video/project2.mp4" width= 500  controls></video></div>
-            
+        <h1 class="text-4xl text-center text-blue-700  font-bold p-2">project</h1>
         
-        <h4>video of my projects review</h4>
-        <div>
-            <h2>Website Development</h2>
-            <p>Designed and built functional and visually appealing websites.</p>
+        <div class="project-section__video flex justify-center p-5"><video src="audio-video/project2.mp4"   controls></video></div>
+        <h4 class="text-center">video of my projects review</h4>
+        <div class="project-section__projects grid grid-cols-12 p-10 gap-4">
+            <div class="col-span-4 border-gray-200 shadow rounded p-10 bg-white">
+                <h2 class="text-2xl text-center text-blue-500 mb-3">Website Development</h2>
+                <p>Designed and built functional and visually appealing websites.</p>
+            </div>
+            <div class="col-span-4 border-gray-200 shadow rounded p-10 bg-white">
+                <h2 class="text-2xl text-center text-blue-500 mb-3"> E-commerce Website</h2>
+                <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
+            </div>
+            <div class="col-span-4 border-gray-200 shadow rounded p-10 bg-white">
+                <h2 class="text-2xl text-center text-blue-500 mb-3">Finance Tracking App</h2>
+                <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
+            </div>
         </div>
-        <div>
-            <h2> E-commerce Website</h2>
-            <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
-        </div>
-        <div>
-            <h2>Finance Tracking App</h2>
-            <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
-        </div>
-
+        <script src="Js/index.js">
+            //mobile menu
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+            burger.addEventListener('click',()=>{if(menu.classList.contains('hidden')){menu.classList.remove('hidden')}else{menu.classList.add('hidden')}})
+          </script>
     </section>
-    <footer>
+    <footer class="footer py-2 bg-blue-800" >
          <a href="resume.html">next Page</a>
     </footer>
 </body>

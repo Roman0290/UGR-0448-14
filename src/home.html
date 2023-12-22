@@ -4,107 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <section>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="Service">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div>
-            <img src="image/image1.png" alt="personal-profile-image">
-        </div>
-        <div>
-            <h1>Hello,I am Roman <span>Debissa</span></h1>
-            <p>An accomplished and detail-oriented web developer, specializing in the creation of visually captivating and user-friendly websites. </p>
-        <a href="about.html">More Me</a>
-        </div>
+<body class="body bg-blue-100">
         
+    <header>
+        <nav class="navbar bg-blue-800 text-white p-4">
+        
+            <div class="flex justify-end px-4 cursor-pointer lg:hidden" id="burger">
+                <svg class="text-indigo-100 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
+    
+            </div>
+            
+              
+            <ul class="hidden lg:block xl:block lg:flex lg:justify-around xl:flex xl:justify-around  " id="menu">
+              <li><a class="navbar-item has-text-white" href="home.html" >Home</a></li>
+              <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+              <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+              <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+              <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section bg-white p-5" id="home">
+            <div class="grid md:grid-cols-12 flex items-center ">
+                <div class="md:col-span-5 has-text-centered ">
+                    <img class="border-gray-100 shadow-lg rounded m-10 p-4" src="image/image1.png" alt="personal-profile-image">
+                </div>
+                <div class="md:col-span-7 ">
+                    <h1 class="text-4xl text-center text-gray-700  font-bold p-2">Hello,I am Roman <span class="font-bold text-blue-700"> Debissa</span></h1>
+                    <p class="text-2xl text-gray-600 mb-6">An accomplished and detail-oriented web developer, specializing in the creation of visually captivating and user-friendly websites. </p>
+                    <a href="about.html" class="button bg-blue-600 rounded-full py-2 px-2 text-1xl cursor-pointer text-white  ">More Me</a>
+                </div>
+            </div>
     </section>
     
-    <section>
-        <h1>who am i</h1>
-        <aside>
-            <p>I'm Roman, a skilled web developer experienced in front-end and back-end development. I create responsive websites and applications using HTML, CSS, JavaScript, and frameworks. With a strong problem-solving mindset, I deliver high-quality solutions, exceeding client expectations. Collaboration is my strength, bringing ideas to life and crafting exceptional user experiences. I'm dedicated to continuous learning and pushing the boundaries of web development.</p>
-            <ul>
-                <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-                <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-                <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-                <li><img src="image/location.png" alt="">Adiss Ababa, Ethiopia</li>
-            </ul>
-            
-
-        </aside>
-        <div>
-            <img src="image/image2.png" alt="image of roman">
-        
+    <section class="section p-10">
+        <div class="grid md:grid-cols-12 ">
+            <aside class="md:col-span-7" >   
+                <h1 class=" text-5xl text-center font-bold text-blue-700">who am i</h1>
+                <p class="text-2xl text-gray-600 mb-6">I'm Roman, a skilled web developer experienced in front-end and back-end development. I create responsive websites and applications using HTML, CSS, JavaScript, and frameworks. With a strong problem-solving mindset, I deliver high-quality solutions, exceeding client expectations. Collaboration is my strength, bringing ideas to life and crafting exceptional user experiences. I'm dedicated to continuous learning and pushing the boundaries of web development.</p>
+                <ul class="grid px-5 text-gray-600">
+                    <li><img class="inline-flex mr-2" src="image/user.png" alt="icon"><span class="inline-flex">Roman Kebede Debissa</span> </li>
+                    <li><img class="inline-flex mr-2" src="image/telephone.png" alt="icon"> <span class="inline-flex">+251902903481</span></li>
+                    <li><img class="inline-flex mr-2" src="image/email.png" alt="icon"><span class="inline-flex">romankebede@gmail.com</span></li>
+                    <li><img class="inline-flex mr-2" src="image/location.png" alt="icon"><span class="inline-flex">Adiss Ababa, Ethiopia</span></li>
+                </ul>
+            </aside>
+            <div class="md:col-span-5 ">
+                <img class="border-gray-100 shadow-lg rounded m-10 p-4" src="image/image2.png" alt="image of roman">
+            </div>
+    
         </div>
-
     </section>
-    <section>
-            <h1>Skills</h1>
-            <h3>I work hard to improve my skills regularly</h3>
-            <div>
-                <h3>HTML</h3>
-                <p>HTML is markup language for structuring and presenting web content. </p>
-            </div>
-            <div>
-                <h3>CSS</h3>
-                <p>CSS is a style sheet language for web pages' visual customization.</p>
-            </div>
-            <div>
-                <h3>JavaScript</h3>
-                <p>JavaScript is a programming language for web interactivity and functionality.</p>
-            </div>
-            <div>
-                <h3>React</h3>
-                <p>React is a JavaScript library for building user interfaces and web applications.</p>
-            </div>
-        
-    </section>
-    <section>
-        <div>
-            <h2>stay connected</h2>
-            <ul>
-                <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-                <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-                <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
-            </ul>
-
+    <section class="section bg-white p-10 " id="skill-container">
+        <div class="container text-center" id="skill">
+          <h1 class="text-4xl text-blue-700 font-bold">Skills</h1>
+          <h3 class="text-2xl text-blue-700 mb-6">I work hard to improve my skills regularly</h3>
         </div>
-        
-        <div>
-            <h2>Quick Link</h2>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <div class="grid md:grid-cols-12 gap-4 mt-4">
+          <div class="md:col-span-6 xl:col-span-3">
+            <div class="outer rounded-full bg-gray-200 w-40 h-40 flex items-center justify-center">
+              <div class="inner bg-blue-500 rounded-full w-32 h-32 flex items-center justify-center animate-pulse">
+                <div class="number text-white text-xl">HTML <br>96%</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="md:col-span-6 xl:col-span-3">
+            <div class="outer rounded-full bg-gray-200 w-40 h-40 flex items-center justify-center">
+              <div class="inner bg-blue-500 rounded-full w-32 h-32 flex items-center justify-center animate-pulse">
+                <div class="number text-white text-xl">JAVASCRIPT <br>62%</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="md:col-span-6 xl:col-span-3">
+            <div class="outer rounded-full bg-gray-200 w-40 h-40 flex items-center justify-center">
+              <div class="inner bg-blue-500 rounded-full w-32 h-32 flex items-center justify-center animate-pulse">
+                <div class="number text-white text-xl">CSS <br>79%</div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="md:col-span-6 xl:col-span-3">
+            <div class="outer rounded-full bg-gray-200 w-40 h-40 flex items-center justify-center">
+              <div class="inner bg-blue-500 rounded-full w-32 h-32 flex items-center justify-center animate-pulse">
+                <div class="number text-white text-xl">JQUERY <br>54%</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-            <h1>Contact Me</h1>
-            <h3>send me a message</h3>
-            <form>
-                <div><input type="text" placeholder="Full Name"></div>
-                <div><input type="text" placeholder="Your Email"></div>
-                <div><textarea rows="5" placeholder="Your message"></textarea></div>
-                <button>submit</button>
+      </section>
+      <section class="section p-10" id="lower-contact-section">
+        <div class="grid md:grid-cols-12">
+          <div class="md:col-span-4">
+            <h2 class="text-lg font-bold">stay connected</h2>
+            <ul class="text-gray-600">
+              <li>
+                <img src="image/telephone.png" alt="icon" class="inline-block w-4 h-4">
+                <span class="ml-2">+251902903481</span>
+              </li>
+              <li>
+                <img src="image/email.png" alt="icon" class="inline-block w-4 h-4">
+                <span class="ml-2">romankebede@gmail.com</span>
+              </li>
+              <li>
+                <img src="image/location.png" alt="icon" class="inline-block w-4 h-4">
+                <span class="ml-2">Adiss Ababa, Ethiopia</span>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="md:col-span-4">
+            <h2 class="text-lg font-bold">Quick Link</h2>
+            <ul class="text-blue-600 text-sm ">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="Service">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="md:col-span-4 text-gray-600">
+            <h1 class="text-lg font-bold">Contact Me</h1>
+            <h3 class="text-sm">send me a message</h3>
+            <form class="form">
+              <div><input class="input mt-1" type="text" placeholder="Full Name"></div>
+              <div><input class="input mt-1" type="text" placeholder="Your Email"></div>
+              <div><textarea class="textarea mt-1" rows="5" placeholder="Your message"></textarea></div>
+              <button class="button rounded bg-blue-600 py-1 px-1 text-1xl cursor-pointer text-white ">submit</button>
             </form>
-            
-            
+          </div>
         </div>
-    </section>
-    <footer>
-        copyright <a href="about.html">next Page</a>
-    </footer>
+      </section>
+      
+      <footer class="footer py-2 bg-blue-800">
+        <a href="about.html" class="text-white">next Page</a>
+      </footer>
+      <script src="Js/index.js">
+        //mobile menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        burger.addEventListener('click',()=>{if(menu.classList.contains('hidden')){menu.classList.remove('hidden')}else{menu.classList.add('hidden')}})
+      </script>
 </body>
 </html>

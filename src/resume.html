@@ -4,72 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
+<body class="body body bg-blue-100">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar bg-blue-800 text-white p-4">
+        
+            <div class="flex justify-end px-4 cursor-pointer lg:hidden" id="burger">
+                <svg class="text-indigo-100 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
+    
+            </div>
+            
+              
+            <ul class="hidden lg:block xl:block lg:flex lg:justify-around xl:flex xl:justify-around  " id="menu">
+              <li><a class="navbar-item has-text-white" href="home.html" >Home</a></li>
+              <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+              <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+              <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+              <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Resume</h1>
-    <section>
+    <section class="section p-10" id="resume">
         
-        <h2>Roman Debissa</h2>
-        <p>web developer</p>
-        <p>Highly skilled and meticulous web developer, specializing in creating aesthetically pleasing and intuitive websites. With an unwavering dedication to my craft, I aim to deliver exceptional digital solutions that seamlessly blend functionality and visual appeal."</p>
+        <h2 class="title text-4xl text-blue-700">Roman Debissa</h2>
+        <p class="subtitle text-2xl text-blue-500">web developer</p>
+        <p >Highly skilled and meticulous web developer, specializing in creating aesthetically pleasing and intuitive websites. With an unwavering dedication to my craft, I aim to deliver exceptional digital solutions that seamlessly blend functionality and visual appeal."</p>
     </section>
-    <section>
-        <div>
-            <h2>Skils</h2>
-            <ul>
-                <li>programing languages</li>
-                <li>web development</li>
-                <li>database management</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Education</h2>
-            <ul>
-                <li>Addis Ababa univeresty. Bachehelor of science in software engineering </li>
-                <li>St.Norbert.  Associated degree in web development</li>
-            </ul>
-        </div>
-        <div>
-            <h2>certeficate</h2>
-            <ul>
-                <li>certifed web developer</li>
-                <li>JavaScript developer certification</li>
-                <li></li>
-            </ul>
-            <a href="image/certifcate.pdf" download="certeficate.pdf">Download certeficate</a>
-        </div>
-        <div>
-            <h2>Work Experience</h2>
-            <table>
-                <tr>
-                    <td>2025</td>
-                    <td>
-                        <h3>web developer </h3>
-                        <p>web developer in ABC company. develop and maintain responcive websites for client,utlizeing HTML,CSS,JavaScript and React</p>
-
-                        </td>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td><h3>Web development</h3> 
-                        <p>Ahewa Technology is the company where you gained work experience as an intern.</p>
-                    </td>
-                </tr>
-            </table>
-            <a href="image/cv.pdf" download="cv.pdf">Download CV</a>
+    <section class="section p-10">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-6">
+                <div class="border-gray-200 shadow rounded p-10 bg-white">
+                    <h2 class="subtitle text-3xl  text-blue-500 mb-3">Skils</h2>
+                    <ul class="list-disc">
+                        <li>programing languages</li>
+                        <li>web development</li>
+                        <li>database management</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-6 ">
+                <div class="border-gray-200 shadow rounded p-10 bg-white">
+                    <h2 class="subtitle text-3xl  text-blue-500 mb-3" >Education</h2>
+                    <ul class="list-disc">
+                        <li>Addis Ababa univeresty. Bachehelor of science in software engineering </li>
+                        <li>St.Norbert.  Associated degree in web development</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="col-span-6 ">
+                <div class="border-gray-200 shadow rounded p-10 bg-white">
+                    <h2 class="subtitle text-3xl text-blue-500 mb-3">certeficate</h2>
+                    <ul class="mb-10 list-disc">
+                        <li>certifed web developer</li>
+                        <li>JavaScript developer certification</li>
+                        <li></li>
+                    </ul>
+                <a class="button  bg-blue-600 rounded-full py-2 px-2 text-1xl cursor-pointer text-white " href="image/certifcate.pdf" download="certeficate.pdf">Download certeficate</a>
+                </div>
+                
+            </div>
+            <div class="col-span-6 ">
+                <div class="border-gray-200 shadow rounded p-5 bg-white">
+                    <h2 class="subtitle text-3xl text-blue-500 mb-3">Work Experience</h2>
+                    <table class="border-collapse border border-gray-300 mb-10">
+                        <tr class="p-2">
+                          <td class="border border-gray-300 p-2">2025</td>
+                          <td class="border border-gray-300 p-2">
+                            <h3 class="text-2xl text-center text-blue-500 mb-1">Web Developer</h3>
+                            <p class="text-sm">Web developer in ABC company. Develop and maintain responsive websites for clients, utilizing HTML, CSS, JavaScript, and React.</p>
+                          </td>
+                        </tr>
+                        <tr class="p-2">
+                          <td class="border border-gray-300 p-2">2023</td>
+                          <td class="border border-gray-300 p-2">
+                            <h3 class="text-2xl text-center text-blue-500 mb-1">Web Development</h3>
+                            <p class="text-sm">Ahewa Technology is the company where you gained work experience as an intern.</p>
+                          </td>
+                        </tr>
+                      </table>
+                <a class="button  bg-blue-600 rounded-full py-2 px-2 text-1xl cursor-pointer text-white" href="image/cv.pdf" download="cv.pdf">Download CV</a>
+                </div>
+                
+            </div>
         </div>
     </section>
-    <footer> <a href="service.html">next page</a></footer>
+    <footer class="footer py-2 bg-blue-800 " id="resume__footer">
+         <a class="text-white" href="service.html">next page</a>
+    </footer>
+    <script src="Js/index.js">
+        //mobile menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        burger.addEventListener('click',()=>{if(menu.classList.contains('hidden')){menu.classList.remove('hidden')}else{menu.classList.add('hidden')}})
+      </script>
 </body>
 </html>

@@ -4,56 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
+<body class="body bg-blue-100">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar bg-blue-800 text-white p-4">
+        
+            <div class="flex justify-end px-4 cursor-pointer lg:hidden" id="burger">
+                <svg class="text-indigo-100 w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                  </svg>
+                  
+    
+            </div>
+            
+              
+            <ul class="hidden lg:block xl:block lg:flex lg:justify-around xl:flex xl:justify-around  " id="menu">
+              <li><a class="navbar-item has-text-white" href="home.html" >Home</a></li>
+              <li><a class="navbar-item has-text-white" href="about.html">About</a></li>
+              <li><a class="navbar-item has-text-white" href="resume.html">Resume</a></li>
+              <li><a class="navbar-item has-text-white" href="Service.html">Service</a></li>
+              <li><a class="navbar-item has-text-white" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>My Services</h1>
-        <P>What i do  for my client</P>
+    <section class=" p-10">
+        <h1 class=" text-4xl text-center text-blue-700 font-bold">My Services</h1>
+        <P class=" text-center font-bold">What i do  for my client</P>
     </section>
-    <div>
-        <div>
-            <img src="image/web-design.png" alt="icon">
-            <h2>website design</h2>
-            <p>I design visually appealing websites with a focus on user experience and responsiveness.</p>
+    <div class="grid grid-cols-12 gap-10 justify-between p-10  ">
+        <div class="col-span-5  ">
+            <div class="border-gray-200 shadow rounded p-10 bg-white">
+                <div class=" flex justify-center mb-3 "><img  src="image/web-design.png" alt="icon"></div>
+                <h2 class=" text-3xl text-center text-blue-500 mb-1 " >website design</h2>
+                <p class=" ">I design visually appealing websites with a focus on user experience and responsiveness.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/web-development.png" alt="icon">
-            <h2>web devlopment</h2>
-            <p> I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+        <div class="col-span-5">
+            <div class="border-gray-200 shadow rounded p-10 bg-white">
+                <div class=" flex justify-center mb-3 "><img src="image/web-development.png" alt="icon"></div>
+                <h2 class=" text-3xl text-center text-blue-500  mb-3 ">web devlopment</h2>
+                <p class=" is-size-4"> I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/cources.png" alt="icon">
-            <h2>courses</h2>
-            <p>I provide online courses for HTML, CSS, and JavaScript, covering the fundamentals of web development.</p>
+        <div class="col-span-5">
+            <div class="border-gray-200 shadow rounded p-10 bg-white">
+                <div class=" flex justify-center mb-3 "> <img  src="image/cources.png" alt="icon"></div>
+                <h2 class="text-3xl text-center text-blue-500 mb-3 ">courses</h2>
+                <p class=" is-size-4">I provide online courses for HTML, CSS, and JavaScript, covering the fundamentals of web development.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/photograpy.png" alt="icon">
-            <h2>Photography</h2>
-            <p>I offer professional photo editing services to enhance and retouch images according to your specific requirements.</p>
+        <div class="col-span-5 ">
+            <div class="border-gray-200 shadow rounded p-10 bg-white">
+                <div class=" flex justify-center mb-3 "><img src="image/photograpy.png" alt="icon"></div> 
+                <h2 class=" text-3xl text-center text-blue-500 mb-3 ">Photography</h2>
+                <p class="">I offer professional photo editing services to enhance and retouch images according to your specific requirements.</p>
+            </div>
+            
         </div>
-        <div>
-            <img src="image/consltancy.png" alt="icon">
-            <h2>Consultancey</h2>
-            <p>I offer counseling services for learning strategies and best practices to optimize your learning experience.</p>
+        <div class="col-span-5">
+            <div class="border-gray-200 shadow rounded p-10 bg-white">
+                <div class=" flex justify-center"><img src="image/consltancy.png" alt="icon"></div>
+                <h2 class=" text-3xl text-center text-blue-500  mb-3">Consultancey</h2>
+                <p class="">I offer counseling services for learning strategies and best practices to optimize your learning experience.</p>
+       
+            </div>
         </div>
         
         
     </div>
 
-    <footer>
-        <P><a href="contact.html">contact me</a></P>
+    <footer  class=" py-2 bg-blue-800 " id="Service-footer">
+        <P><a class="text-white" href="contact.html">contact me</a></P>
     </footer>
+    <script src="Js/index.js">
+        //mobile menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+        burger.addEventListener('click',()=>{if(menu.classList.contains('hidden')){menu.classList.remove('hidden')}else{menu.classList.add('hidden')}})
+      </script>
 
 </body>
 </html>
