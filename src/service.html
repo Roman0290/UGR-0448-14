@@ -33,8 +33,8 @@
         <h1 class=" text-4xl text-center text-blue-700 font-bold">My Services</h1>
         <P class=" text-center font-bold">What i do  for my client</P>
     </section>
-    <div class="grid grid-cols-12 gap-10 justify-between p-10  ">
-        <div class="col-span-5  ">
+    <div class="grid  md:grid-cols-12 gap-10 justify-between p-10  ">
+        <div class="md:col-span-5  ">
             <div class="border-gray-200 shadow rounded p-10 bg-white">
                 <div class=" flex justify-center mb-3 "><img  src="image/web-design.png" alt="icon"></div>
                 <h2 class=" text-3xl text-center text-blue-500 mb-1 " >website design</h2>
@@ -42,7 +42,7 @@
             </div>
             
         </div>
-        <div class="col-span-5">
+        <div class="md:col-span-5">
             <div class="border-gray-200 shadow rounded p-10 bg-white">
                 <div class=" flex justify-center mb-3 "><img src="image/web-development.png" alt="icon"></div>
                 <h2 class=" text-3xl text-center text-blue-500  mb-3 ">web devlopment</h2>
@@ -50,7 +50,7 @@
             </div>
             
         </div>
-        <div class="col-span-5">
+        <div class="md:col-span-5">
             <div class="border-gray-200 shadow rounded p-10 bg-white">
                 <div class=" flex justify-center mb-3 "> <img  src="image/cources.png" alt="icon"></div>
                 <h2 class="text-3xl text-center text-blue-500 mb-3 ">courses</h2>
@@ -58,7 +58,7 @@
             </div>
             
         </div>
-        <div class="col-span-5 ">
+        <div class="md:col-span-5 ">
             <div class="border-gray-200 shadow rounded p-10 bg-white">
                 <div class=" flex justify-center mb-3 "><img src="image/photograpy.png" alt="icon"></div> 
                 <h2 class=" text-3xl text-center text-blue-500 mb-3 ">Photography</h2>
@@ -66,7 +66,7 @@
             </div>
             
         </div>
-        <div class="col-span-5">
+        <div class="md:col-span-5">
             <div class="border-gray-200 shadow rounded p-10 bg-white">
                 <div class=" flex justify-center"><img src="image/consltancy.png" alt="icon"></div>
                 <h2 class=" text-3xl text-center text-blue-500  mb-3">Consultancey</h2>
@@ -81,12 +81,7 @@
     <footer  class=" py-2 bg-blue-800 " id="Service-footer">
         <P><a class="text-white" href="contact.html">contact me</a></P>
     </footer>
-    <script src="Js/index.js">
-        //mobile menu
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu');
-        burger.addEventListener('click',()=>{if(menu.classList.contains('hidden')){menu.classList.remove('hidden')}else{menu.classList.add('hidden')}})
-      </script>
+    <script src="Js/index.js"></script>
 
 </body>
 </html>
