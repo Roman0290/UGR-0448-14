@@ -4,56 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>My Services</h1>
-        <P>What i do  for my client</P>
-    </section>
-    <div>
-        <div>
-            <img src="image/web-design.png" alt="icon">
-            <h2>website design</h2>
+<body class="body has-background-info-light">
+  <header class="header ">
+    <nav class=" navbar navbar-expand-md navbar-light bg-primary">
+        <button class="navbar-toggler bg-light" id="burger" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"></span></button>
+        <ul class="collapse navbar-collapse justify-content-around align-center navbar-nav " id="main-nav">
+            <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="Service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>      
+                    
+        </ul>
+            
+        
+    </nav>
+  </header>
+    <section class="p-10">
+        <h1 class="text-4xl text-center text-primary font-bold">My Services</h1>
+        <p class="text-center font-bold">What I do for my clients</p>
+      </section>
+      
+      <div class="row g-4 justify-content-between p-10">
+        <div class="col-md-5 shadow-lg">
+          <div class=" rounded p-10 bg-light ">
+            <div class="d-flex justify-content-center mb-3"><img src="image/web-design.png" alt="icon"></div>
+            <h2 class=" text-center text-primary mb-1">Website Design</h2>
             <p>I design visually appealing websites with a focus on user experience and responsiveness.</p>
+          </div>
         </div>
-        <div>
-            <img src="image/web-development.png" alt="icon">
-            <h2>web devlopment</h2>
-            <p> I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+        <div class="col-md-5 shadow-lg">
+          <div class=" rounded p-10 bg-light">
+            <div class="d-flex justify-content-center mb-3"><img src="image/web-development.png" alt="icon"></div>
+            <h2 class=" text-center text-primary mb-3">Web Development</h2>
+            <p>I specialize in front-end and back-end development, along with services such as website maintenance, optimization, and API integration.</p>
+          </div>
         </div>
-        <div>
-            <img src="image/cources.png" alt="icon">
-            <h2>courses</h2>
+        <div class="col-md-5 shadow-lg">
+          <div class=" rounded p-10 bg-light ">
+            <div class="d-flex justify-content-center mb-3"><img src="image/cources.png" alt="icon"></div>
+            <h2 class=" text-center text-primary mb-3">Courses</h2>
             <p>I provide online courses for HTML, CSS, and JavaScript, covering the fundamentals of web development.</p>
+          </div>
         </div>
-        <div>
-            <img src="image/photograpy.png" alt="icon">
-            <h2>Photography</h2>
+        <div class="col-md-5 shadow-lg">
+          <div class=" rounded p-10 bg-light">
+            <div class="d-flex justify-content-center mb-3"><img src="image/photograpy.png" alt="icon"></div>
+            <h2 class=" text-center text-primary mb-3">Photography</h2>
             <p>I offer professional photo editing services to enhance and retouch images according to your specific requirements.</p>
+          </div>
         </div>
-        <div>
-            <img src="image/consltancy.png" alt="icon">
-            <h2>Consultancey</h2>
+        <div class="col-md-5 shadow-lg">
+          <div class=" rounded p-10 bg-white">
+            <div class="d-flex justify-content-center"><img src="image/consltancy.png" alt="icon"></div>
+            <h2 class=" text-center text-primary mb-3">Consultancy</h2>
             <p>I offer counseling services for learning strategies and best practices to optimize your learning experience.</p>
+          </div>
         </div>
-        
-        
-    </div>
-
-    <footer>
-        <P><a href="contact.html">contact me</a></P>
-    </footer>
-
+      </div>
+      
+      <footer class="py-2 bg-primary" >
+        <p class="px-3"><a class="text-light d-flex justify-content-end mr-3" href="contact.html">Contact Me</a></p>
+      </footer>
+      <script src="./js/index.js"></script>
 </body>
 </html>

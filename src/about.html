@@ -4,82 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="body has-background-info-light">
+    <header class="header ">
+        <nav class=" navbar navbar-expand-md navbar-light bg-primary">
+            <button class="navbar-toggler bg-light" id="burger" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"></span></button>
+            <ul class="collapse navbar-collapse justify-content-around align-center navbar-nav " id="main-nav">
+                <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="Service.html">Service</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>      
+                        
             </ul>
+                
+            
         </nav>
     </header>
-    <section>
-        <h1>ABOUT ME</h1>
-        <p><q>  The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by roman kebede</p>
-    </section>
-    <div>
-        <img src="image/image2.png" alt="image">
-    </div>
-        
-    <article>
-        <h2>My Bio</h2>
-          <div><audio src="audio-video/who-am-i.ogg" controls></audio></div>
-          <h3>stay contact</h3>
-          <ul>
-            <li><img src="image/user.png" alt="icon">Roman Kebede Debissa</li>
-            <li><img src="image/telephone.png" alt="icon"> +251902903481</li>
-            <li><img src="image/email.png" alt="icon">romankebede@gmail.com</li>
-            <li><img src="image/location.png" alt="icon">Adiss Ababa, Ethiopia</li>
+    <section class="about-section p-6">
+        <h1 class="text-center fw-bold p-2">ABOUT ME</h1>
+        <p class="text-center lead "><q class="fst-italic">The web is like a canvas, and I am the artist, crafting digital experiences that captivate and inspire.</q> by Roman Kebede</p>
+      </section>
+      
+      <article class="about-article row">
+        <div class="about-article__img col-md-5">
+          <img class="border shadow-lg rounded m-10 p-4 bg-white img-fluid" src="image/image2.png" alt="image">
+        </div>
+        <div class="about-article__description col-md-7 p-10">
+          <h2 class=" mt-3 px-5 pt-5 text-primary">My Bio</h2>
+          <div class="about-span">
+            <audio class=" m-5" src="audio-video/who-am-i.ogg" controls></audio>
+          </div>
+          <h3 class="pt-5 pb-5 text-primary mx-5">Stay in contact</h3>
+          <ul class="px-5">
+            <li>
+              <img class="inline-flex mr-2" src="image/user.png" alt="icon">
+              <span class="inline-flex">Roman Kebede Debissa</span>
+            </li>
+            <li>
+              <img class="inline-flex mr-2" src="image/telephone.png" alt="icon">
+              <span class="inline-flex">+251902903481</span>
+            </li>
+            <li>
+              <img class="inline-flex mr-2" src="image/email.png" alt="icon">
+              <span class="inline-flex">romankebede@gmail.com</span>
+            </li>
+            <li>
+              <img class="inline-flex mr-2" src="image/location.png" alt="icon">
+              <span class="inline-flex mb-5 ">Addis Ababa, Ethiopia</span>
+            </li>
           </ul>
-        
-    </article>
-    <section>
-        <div>
-            <h2>interest</h2>
+        </div>
+      </article>
+      <section class="interest-section container-fluid p-4 bg-white">
+        <div class="row">
+          <div class="col-md-5 border shadow rounded m-3 p-4">
+            <h2 class="fs-1 font-bold text-primary pb-3">Interest</h2>
             <ul>
-                <li>Problem-solving</li>
-                <li>Codingand programing</li>
-                <li>Continous Learning</li>
-                <li>collaboration and team work</li>
+              <li>Problem-solving</li>
+              <li>Coding and programming</li>
+              <li>Continuous Learning</li>
+              <li>Collaboration and teamwork</li>
             </ul>
-        </div>
-        <div>
-            <h2>hobbis</h2>
+          </div>
+          <div class="col-md-5 border shadow rounded m-3 p-4">
+            <h2 class="fs-1 font-bold text-primary pb-3">Hobbies</h2>
             <ul>
-                <li>Graphics Design</li>
-                <li>Photography</li>
-                <li>Writing/Blogging</li>
-                <li>Teaching or Monitaring</li>
+              <li>Graphics Design</li>
+              <li>Photography</li>
+              <li>Writing/Blogging</li>
+              <li>Teaching or Mentoring</li>
             </ul>
+          </div>
         </div>
-    </section>
-    <section>
-        <h1>project</h1>
-        
-        <div><video src="audio-video/project2.mp4" width= 500  controls></video></div>
-            
-        
-        <h4>video of my projects review</h4>
-        <div>
-            <h2>Website Development</h2>
-            <p>Designed and built functional and visually appealing websites.</p>
+      </section>
+      <section class="project-section py-6">
+        <h1 class="fs-1 text-center text-primary font-bold p-2">Project</h1>
+      
+        <div class="project-section__video d-flex justify-content-center p-5">
+          <video src="audio-video/project2.mp4" controls></video>
         </div>
-        <div>
-            <h2> E-commerce Website</h2>
-            <p>Developed an online store with secure payment gateways and shopping cart functionality.</p>
+      
+        <h4 class="text-center">Video of my project reviews</h4>
+      
+        <div class="project-section__projects row justify-content-between g-4 p-5">
+          <div class="col-md-3 border rounded p-4 bg-light shadow-lg">
+            <h2 class="text-center text-primary mb-3 fs-1">Website Development</h2>
+            <p class="fs-4">Designed and built functional and visually appealing websites.</p>
+          </div>
+          <div class="col-md-3 border rounded p-4 bg-light shadow-lg">
+            <h2 class=" text-center text-primary mr-3 mb-3 fs-1">E-commerce Website</h2>
+            <p class="fs-4">Developed an online store with secure payment gateways and shopping cart functionality.</p>
+          </div>
+          <div class="col-md-3 border rounded p-4 bg-light shadow-lg">
+            <h2 class="text-2xl text-center text-primary mb-3 fs-1 ">Finance Tracking App</h2>
+            <p class="fs-4">Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
+          </div>
         </div>
-        <div>
-            <h2>Finance Tracking App</h2>
-            <p>Contributed to the development of a finance management app for tracking expenses and managing budgets.</p>
-        </div>
-
-    </section>
-    <footer>
-         <a href="resume.html">next Page</a>
-    </footer>
+    
+      </section>
+      <footer class="footer py-2 bg-primary">
+        <a class="text-light d-flex justify-content-end mr-6 " href="resume.html">Next Page</a>
+      </footer>
+      <script src="./js/index.js"></script>
 </body>
 </html>

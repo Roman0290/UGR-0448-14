@@ -4,72 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Page</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Resume</h1>
-    <section>
-        
-        <h2>Roman Debissa</h2>
-        <p>web developer</p>
-        <p>Highly skilled and meticulous web developer, specializing in creating aesthetically pleasing and intuitive websites. With an unwavering dedication to my craft, I aim to deliver exceptional digital solutions that seamlessly blend functionality and visual appeal."</p>
-    </section>
-    <section>
-        <div>
-            <h2>Skils</h2>
-            <ul>
-                <li>programing languages</li>
-                <li>web development</li>
-                <li>database management</li>
-            </ul>
-        </div>
-        <div>
-            <h2>Education</h2>
-            <ul>
-                <li>Addis Ababa univeresty. Bachehelor of science in software engineering </li>
-                <li>St.Norbert.  Associated degree in web development</li>
-            </ul>
-        </div>
-        <div>
-            <h2>certeficate</h2>
-            <ul>
-                <li>certifed web developer</li>
-                <li>JavaScript developer certification</li>
-                <li></li>
-            </ul>
-            <a href="image/certifcate.pdf" download="certeficate.pdf">Download certeficate</a>
-        </div>
-        <div>
-            <h2>Work Experience</h2>
-            <table>
-                <tr>
-                    <td>2025</td>
-                    <td>
-                        <h3>web developer </h3>
-                        <p>web developer in ABC company. develop and maintain responcive websites for client,utlizeing HTML,CSS,JavaScript and React</p>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
 
-                        </td>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td><h3>Web development</h3> 
-                        <p>Ahewa Technology is the company where you gained work experience as an intern.</p>
-                    </td>
-                </tr>
-            </table>
-            <a href="image/cv.pdf" download="cv.pdf">Download CV</a>
-        </div>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body class="body has-background-info-light">
+  <header class="header ">
+    <nav class=" navbar navbar-expand-md navbar-light bg-primary">
+        <button class="navbar-toggler bg-light" id="burger" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"></span></button>
+        <ul class="collapse navbar-collapse justify-content-around align-center navbar-nav " id="main-nav">
+            <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="resume.html">Resume</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="Service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>      
+                    
+        </ul>
+            
+        
+    </nav>
+</header>
+    <section class="section p-10" id="resume">
+        <h2 class="title text-4xl text-primary">Roman Debissa</h2>
+        <p class="subtitle text-2xl text-blue">Web Developer</p>
+        <p class="mt-3">Highly skilled and meticulous web developer, specializing in creating aesthetically pleasing and intuitive websites. With an unwavering dedication to my craft, I aim to deliver exceptional digital solutions that seamlessly blend functionality and visual appeal.</p>
     </section>
-    <footer> <a href="service.html">next page</a></footer>
+    <section class="section p-10">
+      <div class="row g-5">
+        <div class="col-md-5">
+          <div class="shadow-lg rounded p-5 bg-light">
+            <h2 class="fs-2 text-primary mb-3">Skills</h2>
+            <ul class="list-disc text-gray-700">
+              <li>Programming languages</li>
+              <li>Web development</li>
+              <li>Database management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="shadow-lg rounded p-5 bg-light">
+            <h2 class="fs-2 text-primary mb-3">Education</h2>
+            <ul class="list-disc text-gray-700">
+              <li>Addis Ababa University. Bachelor of Science in Software Engineering</li>
+              <li>St. Norbert. Associate degree in Web Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="shadow-lg rounded p-5 bg-light">
+            <h2 class="subtitle fs-2 text-primary mb-3">Certificates</h2>
+            <ul class="mb-10 list-disc text-gray-700">
+              <li>Certified Web Developer</li>
+              <li>JavaScript Developer Certification</li>
+            </ul>
+            <a class="btn btn-primary rounded-full py-2 px-2 text-1xl text-white" href="image/certificate.pdf" download="certificate.pdf">Download Certificate</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="shadow-lg rounded p-5 bg-light">
+            <h2 class=" fs-2 text-primary mb-3">Work Experience</h2>
+            <table class="table border border-gray-300 mb-10 text-gray-700">
+              <tr>
+                <td class="border border-gray-300">2025</td>
+                <td class="border border-gray-300">
+                  <h3 class="text-2xl text-center text-primary mb-1">Web Developer</h3>
+                  <p class="text-sm">Web developer in ABC company. Develop and maintain responsive websites for clients, utilizing HTML, CSS, JavaScript, and React.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300">2023</td>
+                <td class="border border-gray-300">
+                  <h3 class="text-2xl text-center text-primary mb-1">Web Development</h3>
+                  <p class="text-sm">Ahewa Technology is the company where you gained work experience as an intern.</p>
+                </td>
+              </tr>
+            </table>
+            <a class="btn btn-primary rounded-full py-2 px-2 text-1xl text-white" href="image/cv.pdf" download="cv.pdf">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer py-2 bg-primary" >
+      <a class="text-light d-flex justify-content-end mr-3" href="service.html">Next Page</a>
+    </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

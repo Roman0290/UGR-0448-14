@@ -4,53 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="Service">Service</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+<body class="bg-light">
+    <header class="header ">
+        <nav class=" navbar navbar-expand-md navbar-light bg-primary">
+            <button class="navbar-toggler bg-light" id="burger" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" ><span class="navbar-toggler-icon"></span></button>
+            <ul class="collapse navbar-collapse justify-content-around align-center navbar-nav " id="main-nav">
+                <li class="nav-item"><a class="nav-link text-light active" aria-current="page" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="Service.html">Service</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>      
+                        
+            </ul>    
         </nav>
     </header>
-    <article>
-        <h1>Contact Me</h1>
-        
-        <div>
-            <h2>stay connected</h2>
-            <div>
-                <img src="image/facebook.png" alt="icon"> 
-                <p>facebook</p>
-            </div>
-            <div>
-                <img src="image/linkedin.png" alt="icon"> 
-                <p>linkdin</p>
-            </div>
-            <div>
-                <img src="image/instagram.png" alt="icon"> 
-                <p>instagram</p>
-            </div>
-            <div>
-                <img src="image/email.png" alt="icon"> 
-                <p>Email</p>
-            </div>
-    
+    <article class="">
+        <h1 class=" display-4 text-primary text-center">Contact Me</h1>
+        <h2 class="h4 text-primary text-center">Stay Connected</h2>
+        <div class="row justify-content-aroun my-5 mx-6">
+            <div class="col-md-6 col-lg-3">
+            <img class="icon contact-me--icon" src="image/facebook.png" alt="icon">
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img class="icon contact-me--icon" src="image/linkedin.png" alt="icon">
+            <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img class="icon contact-me--icon" src="image/instagram.png" alt="icon">
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <img class="icon contact-me--icon" src="image/email.png" alt="icon">
+            <p><a href="https://www.facebook.com/">Email</a></p>
+          </div>
         </div>
-            <div>
-                <h2>send me a message</h2>
-                <form>
-                    <div><input type="text" placeholder="Full Name"></div>
-                    <div><input type="text" placeholder="Your Email"></div>
-                    <div><textarea rows="10" placeholder="Your message"></textarea></div>
-                    <Div><button>submit</button></Div>
-                </form> 
+        <h2 class="text-center h4 text-primary">Send Me a Message</h2>
+        <form class="row justify-content-center my-5 ">
+            <div class="col-lg-6">
+                <div class="">
+                    <input class="w-100 form-control mb-3 " type="text" name="email" placeholder="Your Fullname">
+                </div>
+              
+                <div class="">
+                    <input class="w-100 form-control mb-3" type="text" name="subject" placeholder="Your Email">
+                </div>
+                
+                <textarea class='w-100 form-control mb-3' name="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                
+                <div><button class="btn bg-primary m-1 text-light" type="submit" >SUBMIT</button></div>
             </div>
-       
-    </article>
+               
+            
+        </form>
+          
+      </article>
+      <script src="./js/index.js"></script>
            
             
     
